@@ -253,6 +253,7 @@ def main(args):
         "/live/device/get/parameter/value",
         "/live/device/get/parameter/value_string",
         "/live/device/set/parameter/value",
+        "/live/device/get/is_foldable"
         # Add more addresses as needed
     ]
 

@@ -136,6 +136,49 @@ class TrackHandler(AbletonOSCHandler):
         self.osc_server.add_handler("/live/track/get/arrangement_clips/length", create_track_callback(track_get_arrangement_clip_lengths))
         self.osc_server.add_handler("/live/track/get/arrangement_clips/start_time", create_track_callback(track_get_arrangement_clip_start_times))
 
+        def get_all_sub_rack_devices(rack):
+            #devices_in_subrack = rack.chains[0].devices
+            all_sub_devices = []
+            for chain in rack.chains:
+                for device in chain.devices:
+                    if (str(type(device)) == "<class 'RackDevice.RackDevice'>"):
+                        all_sub_devices.extend([device])
+                        sub_devices = get_all_sub_rack_devices(device)
+                        all_sub_devices.extend(sub_devices)
+                    else:
+                        all_sub_devices.extend([device])
+            return all_sub_devices
+
+        def convert_dict_to_list(dict):
+            dict_list = list(dict.keys())[0]
+            dict_values = list(dict.values())[0]
+            return [dict_list] + dict_values
+
+        def get_all_devices(track):
+            full_data = []
+            device_list = [x for x in track.devices]
+            devices = []
+            for device in device_list:
+                if (str(type(device)) == "<class 'RackDevice.RackDevice'>"):
+                    rack = device
+                    devices.clear()
+                    for chain in rack.chains:
+                        # self.logger.warning(str(chain.name))
+                        for device in chain.devices:
+                            devices.append(device)
+                            if (str(type(device)) == "<class 'RackDevice.RackDevice'>"):
+                                sub_devices = get_all_sub_rack_devices(device)
+                                devices.extend(sub_devices)
+                        # devices.append(chain)
+                    all_devices_in_rack = {rack: devices}
+                    full_data.extend(convert_dict_to_list(all_devices_in_rack))
+                else:
+                    full_data.append(device)
+            # if (len(full_data) == 1): full_data = list(chain.from_iterable([full_data]))
+            # else:
+            #    full_data = list(chain.from_iterable(full_data))
+            return full_data
+
         def track_get_num_devices(track, _):
             return len(track.devices),
 
@@ -150,6 +193,48 @@ class TrackHandler(AbletonOSCHandler):
 
         def track_get_device_can_have_chains(track, _):
             return tuple(device.can_have_chains for device in track.devices)
+
+        def track_get_device_is_foldable(track, _):
+            full_data = get_all_devices(track)
+            return tuple([_[0], full_data[_[0]].can_have_chains])
+        self.osc_server.add_handler("/live/device/get/is_foldable", create_track_callback(track_get_device_is_foldable))
+
+        def track_get_device_rack_device_name(track, _):
+            full_data = get_all_devices(track)
+            return tuple([_[0],full_data[_[0]].name])
+        self.osc_server.add_handler("/live/device/get/rack_device_name", create_track_callback(track_get_device_rack_device_name))
+
+        def track_get_device_is_grouped(track, _):
+            full_data = get_all_devices(track)
+            if(str(type(full_data[_[0]].canonical_parent)) == "<class 'Chain.Chain'>"):#hasattr(full_data[_[0]].canonical_parent, 'chains')):
+                return tuple([_[0], True])
+            else:
+                return tuple([_[0], False])
+        self.osc_server.add_handler("/live/device/get/is_grouped", create_track_callback(track_get_device_is_grouped))
+
+        def track_get_device_num_of_chains(track, _):
+            full_data = get_all_devices(track)
+            return tuple([_[0], len(full_data[_[0]].chains)])
+        self.osc_server.add_handler("/live/device/get/number_of_chains", create_track_callback(track_get_device_num_of_chains))
+
+        def track_get_device_name_of_chains(track, _):
+            full_data = get_all_devices(track)
+            return tuple([_[0], [chain.name.split(" | ") for chain in full_data[_[0]].chains]])
+        self.osc_server.add_handler("/live/device/get/names_of_chains", create_track_callback(track_get_device_name_of_chains))
+
+
+        def track_get_device_name_of_devicechains(track, _):
+            full_data = get_all_devices(track)
+            self.logger.info([x.name for x in full_data[_[0]:]])
+            self.logger.info([x for x in full_data[_[0]:] if 'Device.Device' in str(x)])
+            self.logger.info([x.canonical_parent for x in full_data[_[0]:]])
+            return tuple([_[0], [x.name for x in full_data[_[0]:] if 'Device.Device' in (str(type(x))) and 'Chain' in str(type(x.canonical_parent))]])
+        self.osc_server.add_handler("/live/device/get/names_of_devices_in_chain", create_track_callback(track_get_device_name_of_devicechains))
+
+        def track_get_device_name_of_chain(track, _):
+            full_data = get_all_devices(track)
+            return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+        self.osc_server.add_handler("/live/device/get/chain_name", create_track_callback(track_get_device_name_of_chain))
 
         """
          - name: the device's human-readable name
