@@ -81,8 +81,8 @@ class TrackHandler(AbletonOSCHandler):
         self.osc_server.add_handler("/live/return_track/get/color", return_track_color)
 
         def return_track_name(params):
-            return tuple([params[0], self.song.return_tracks[params[0]].name])
-
+            tracks = tuple(self.song.tracks) + tuple(self.song.return_tracks) + tuple([self.song.master_track])
+            return tuple([params[0], tracks[params[0]].name])
         self.osc_server.add_handler("/live/return_track/get/name", return_track_name)
 
         def return_track_color_index(params):
@@ -92,9 +92,7 @@ class TrackHandler(AbletonOSCHandler):
 
         def return_track_devices_name(params):
             device_list = get_all_devices(self.song.return_tracks[params[0]])
-            self.logger.warning(device_list)
             return tuple([params[0], [x.name for x in device_list]])
-
         self.osc_server.add_handler("/live/return_track/get/devices/name", return_track_devices_name)
 
         def return_track_devices_type(params):
@@ -235,13 +233,13 @@ class TrackHandler(AbletonOSCHandler):
             device_list = [x for x in track.devices]
             devices = []
             for device in device_list:
-                if (str(type(device)) == "<class 'RackDevice.RackDevice'>"):
+                if ("RackDevice" in str(type(device))):
                     rack = device
                     devices.clear()
                     for chain in rack.chains:
                         for device in chain.devices:
                             devices.append(device)
-                            if (str(type(device)) == "<class 'RackDevice.RackDevice'>"):
+                            if ("RackDevice" in str(type(device))):
                                 sub_devices = get_all_sub_rack_devices(device)
                                 devices.extend(sub_devices)
                     all_devices_in_rack = {rack: devices}

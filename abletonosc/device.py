@@ -25,7 +25,7 @@ class DeviceHandler(AbletonOSCHandler):
         ]
         properties_r = [
             "class_name",
-            "name",
+            #"name",
             "type"
         ]
         properties_rw = [
