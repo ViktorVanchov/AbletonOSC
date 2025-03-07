@@ -81,8 +81,7 @@ class TrackHandler(AbletonOSCHandler):
         self.osc_server.add_handler("/live/return_track/get/color", return_track_color)
 
         def return_track_name(params):
-            tracks = tuple(self.song.tracks) + tuple(self.song.return_tracks) + tuple([self.song.master_track])
-            return tuple([params[0], tracks[params[0]].name])
+            return tuple([params[0], self.song.return_tracks[params[0].name]])
         self.osc_server.add_handler("/live/return_track/get/name", return_track_name)
 
         def return_track_color_index(params):
