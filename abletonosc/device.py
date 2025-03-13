@@ -10,7 +10,7 @@ class DeviceHandler(AbletonOSCHandler):
         def create_device_callback(func, *args, include_ids: bool = False):
             def device_callback(params: Tuple[Any]):
                 track_index, device_index = int(params[0]), int(params[1])
-                device = [self.song.tracks + self.song.return_tracks + self.song.master_track][0][track_index].devices[device_index]
+                device = [self.song.tracks + self.song.return_tracks + [self.song.master_track]][0][track_index].devices[device_index]
                 if (include_ids):
                     rv = func(device, *args, params[0:])
                 else:

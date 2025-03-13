@@ -18,8 +18,8 @@ class TrackHandler(AbletonOSCHandler):
                     track_indices = [int(params[0])]
 
                 for track_index in track_indices:
-                    self.logger.info(f"Logs:{[self.song.tracks + self.song.return_tracks + self.song.master_track]}")
-                    track = [self.song.tracks + self.song.return_tracks + self.song.master_track][0][track_index]
+                    self.logger.info(f"Logs:{[self.song.tracks + self.song.return_tracks + [self.song.master_track]]}")
+                    track = [self.song.tracks + self.song.return_tracks + [self.song.master_track]][0][track_index]
                     if include_track_id:
                         rv = func(track, *args, tuple([track_index] + params[1:]))
                     else:
