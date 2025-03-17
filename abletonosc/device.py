@@ -1,6 +1,47 @@
 from typing import Tuple, Any
 from .handler import AbletonOSCHandler
 
+
+def get_all_sub_rack_devices(rack):
+    all_sub_devices = []
+    for chain in rack.chains:
+        for device in chain.devices:
+            if (str(type(device)) == "<class 'RackDevice.RackDevice'>"):
+                all_sub_devices.extend([device])
+                sub_devices = get_all_sub_rack_devices(device)
+                all_sub_devices.extend(sub_devices)
+            else:
+                all_sub_devices.extend([device])
+    return all_sub_devices
+
+
+def convert_dict_to_list(dict):
+    dict_list = list(dict.keys())[0]
+    dict_values = list(dict.values())[0]
+    return [dict_list] + dict_values
+
+
+def get_all_devices(track):
+    full_data = []
+    device_list = [x for x in track.devices]
+    devices = []
+    for device in device_list:
+        if ("RackDevice" in str(type(device))):
+            rack = device
+            devices.clear()
+            for chain in rack.chains:
+                for device in chain.devices:
+                    devices.append(device)
+                    if ("RackDevice" in str(type(device))):
+                        sub_devices = get_all_sub_rack_devices(device)
+                        devices.extend(sub_devices)
+            all_devices_in_rack = {rack: devices}
+            full_data.extend(convert_dict_to_list(all_devices_in_rack))
+        else:
+            full_data.append(device)
+    return full_data
+
+
 class DeviceHandler(AbletonOSCHandler):
     def __init__(self, manager):
         super().__init__(manager)
@@ -10,7 +51,8 @@ class DeviceHandler(AbletonOSCHandler):
         def create_device_callback(func, *args, include_ids: bool = False):
             def device_callback(params: Tuple[Any]):
                 track_index, device_index = int(params[0]), int(params[1])
-                device = [self.song.tracks + self.song.return_tracks + (self.song.master_track,)][0][track_index].devices[device_index]
+                track = [self.song.tracks + self.song.return_tracks + (self.song.master_track,)][0][track_index]
+                device = get_all_devices(track)[device_index]
                 if (include_ids):
                     rv = func(device, *args, params[0:])
                 else:
