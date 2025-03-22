@@ -77,61 +77,62 @@ class TrackHandler(AbletonOSCHandler):
 
         #------------------Return track and Master Track calls------------------------
         def return_track_color(params):
-            return tuple([params[0], self.song.return_tracks[params[0]].color])
-
+            return (f"({params[0]}, {self.song.return_tracks[params[0]].color})",)
         self.osc_server.add_handler("/live/return_track/get/color", return_track_color)
 
         def return_track_name(params):
-            return tuple([params[0], self.song.return_tracks[params[0].name]])
+            return (f"({params[0]}, {self.song.return_tracks[params[0]].name})",)
         self.osc_server.add_handler("/live/return_track/get/name", return_track_name)
 
         def return_track_color_index(params):
-            return tuple([params[0], self.song.return_tracks[params[0]].color_index])
-
+            return (f"({params[0]}, {self.song.return_tracks[params[0]].color_index})",)
         self.osc_server.add_handler("/live/return_track/get/color_index", return_track_color_index)
 
         def return_track_devices_name(params):
             device_list = get_all_devices(self.song.return_tracks[params[0]])
-            return tuple([params[0], [x.name for x in device_list]])
+            device_names = [x.name for x in device_list]
+            return (f"({params[0]}, {device_names})",)
         self.osc_server.add_handler("/live/return_track/get/devices/name", return_track_devices_name)
 
         def return_track_devices_type(params):
             device_list = get_all_devices(self.song.return_tracks[params[0]])
-            return tuple([params[0], [x.type for x in device_list if (hasattr(x, "type"))]])
+            device_types = [str(int(x.type)) for x in device_list if hasattr(x, "type")]
+            return (f"({params[0]}, [{', '.join(device_types)}])",)
         self.osc_server.add_handler("/live/return_track/get/devices/type", return_track_devices_type)
 
         def return_track_devices_class_name(params):
             device_list = get_all_devices(self.song.return_tracks[params[0]])
-            return tuple([params[0], [x.class_name for x in device_list if (hasattr(x, "class_name"))]])
+            class_names = [x.class_name for x in device_list if hasattr(x, "class_name")]
+            return (f"({params[0]}, {class_names})",)
         self.osc_server.add_handler("/live/return_track/get/devices/class_name", return_track_devices_class_name)
 
         def return_track_numdevices(params):
             device_list = get_all_devices(self.song.return_tracks[params[0]])
-            return tuple([params[0], len(device_list)])
+            return (f"({params[0]}, {len(device_list)})",)
         self.osc_server.add_handler("/live/return_track/get/num_devices", return_track_numdevices)
 
         def master_track_devices_num_devices(params):
             device_list = get_all_devices(self.song.master_track)
             self.logger.info(device_list)
-            return tuple([len(device_list)])
+            return (f"({len(device_list)},)",)
         self.osc_server.add_handler("/live/master_track/get/num_devices", master_track_devices_num_devices)
 
         def master_track_devices_name_devices(params):
             device_list = get_all_devices(self.song.master_track)
-            return tuple([x.name for x in device_list])
-
+            device_names = [f"'{x.name}'" for x in device_list]  # Add quotes around each name
+            formatted = f"({', '.join(device_names)})"
+            return (formatted,)
         self.osc_server.add_handler("/live/master_track/get/devices/name", master_track_devices_name_devices)
 
         def master_track_devices_type_devices(params):
             device_list = get_all_devices(self.song.master_track)
-            return tuple([x.type for x in device_list if (hasattr(x, "type"))])
-
+            return (f"({', '.join(str(int(x.type)) for x in device_list if hasattr(x, 'type'))})",)
         self.osc_server.add_handler("/live/master_track/get/devices/type", master_track_devices_type_devices)
 
         def master_track_devices_class_name_devices(params):
             device_list = get_all_devices(self.song.master_track)
-            return tuple([x.class_name for x in device_list if (hasattr(x, "class_name"))])
-
+            class_names = [f"'{x.class_name}'" for x in device_list if hasattr(x, "class_name")]
+            return (f"({', '.join(class_names)})",)
         self.osc_server.add_handler("/live/master_track/get/devices/class_name",
                                     master_track_devices_class_name_devices)
 
