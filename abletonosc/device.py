@@ -59,6 +59,9 @@ class DeviceHandler(AbletonOSCHandler):
                     rv = func(device, *args, params[2:])
 
                 if rv is not None:
+                    # Convert any return values to a list before packaging
+                    if isinstance(rv, tuple):
+                        rv = list(rv)
                     return (track_index, device_index, *rv)
 
             return device_callback
@@ -92,7 +95,7 @@ class DeviceHandler(AbletonOSCHandler):
         # Device: Get/set parameter lists
         #--------------------------------------------------------------------------------
         def device_get_num_parameters(device, params: Tuple[Any] = ()):
-            return len(device.parameters),
+            return (len(device.parameters),)
 
         def device_get_parameters_name(device, params: Tuple[Any] = ()):
             return tuple(parameter.name for parameter in device.parameters)
@@ -129,7 +132,7 @@ class DeviceHandler(AbletonOSCHandler):
             # that send floats by default.
             # https://github.com/ideoforms/AbletonOSC/issues/33
             param_index = int(params[0])
-            return param_index, device.parameters[param_index].value
+            return (param_index, device.parameters[param_index].value)
         
         # Uses str_for_value method to return the UI-friendly version of a parameter value (ex: "2500 Hz")
         def device_get_parameter_value_string(device, params: Tuple[Any] = ()):

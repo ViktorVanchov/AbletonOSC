@@ -73,7 +73,16 @@ class OSCServer:
                          If None, uses the default remote address.
         """
         msg_builder = OscMessageBuilder(address)
+        # Convert params to ensure proper handling of nested tuples
+        processed_params = []
         for param in params:
+            # Convert tuples to lists for better OSC serialization
+            if isinstance(param, tuple):
+                processed_params.append(list(param))
+            else:
+                processed_params.append(param)
+        
+        for param in processed_params:
             msg_builder.add_arg(param)
 
         try:
