@@ -179,6 +179,17 @@ class DeviceHandler(AbletonOSCHandler):
             param_index = int(params[0])
             return param_index, device.parameters[param_index].name
 
+        #--------------------------------------------------------------------------------
+        # Device: Get chains for rack devices
+        #--------------------------------------------------------------------------------
+        def device_get_names_of_chains(device, params: Tuple[Any] = ()):
+            if hasattr(device, 'chains'):
+                return [chain.name for chain in device.chains]
+            else:
+                # Return an empty list if this isn't a rack device with chains
+                return []
+
+        self.osc_server.add_handler("/live/device/get/names_of_chains", create_device_callback(device_get_names_of_chains))
         self.osc_server.add_handler("/live/device/get/parameter/value", create_device_callback(device_get_parameter_value))
         self.osc_server.add_handler("/live/device/get/parameter/value_string", create_device_callback(device_get_parameter_value_string))
         self.osc_server.add_handler("/live/device/set/parameter/value", create_device_callback(device_set_parameter_value))
