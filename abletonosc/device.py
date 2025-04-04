@@ -184,10 +184,21 @@ class DeviceHandler(AbletonOSCHandler):
         #--------------------------------------------------------------------------------
         def device_get_names_of_chains(device, params: Tuple[Any] = ()):
             if hasattr(device, 'chains'):
-                return [chain.name for chain in device.chains]
+                chains_list = []
+                # Process chain names for proper formatting
+                for chain in device.chains:
+                    # Check if chain name contains pipe separators
+                    if ' | ' in chain.name:
+                        # Split at pipes and add each name separately
+                        for name in chain.name.split(' | '):
+                            chains_list.append(name)
+                    else:
+                        chains_list.append(chain.name)
+                # Return as nested list to match [[chain1, chain2, chain3]] format
+                return [[chains_list]]
             else:
                 # Return an empty list if this isn't a rack device with chains
-                return []
+                return [[]]
 
         self.osc_server.add_handler("/live/device/get/names_of_chains", create_device_callback(device_get_names_of_chains))
         self.osc_server.add_handler("/live/device/get/parameter/value", create_device_callback(device_get_parameter_value))

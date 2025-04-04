@@ -77,38 +77,60 @@ class TrackHandler(AbletonOSCHandler):
 
         #------------------Return track and Master Track calls------------------------
         def return_track_color(params):
-            return (f"({params[0]}, {self.song.return_tracks[params[0]].color})",)
+            track_id = params[0]
+            color = self.song.return_tracks[track_id].color
+            # Return a properly structured tuple without nesting
+            return (track_id, color)
         self.osc_server.add_handler("/live/return_track/get/color", return_track_color)
 
         def return_track_name(params):
-            return (f"({params[0]}, {self.song.return_tracks[params[0]].name})",)
+            track_id = params[0]
+            name = self.song.return_tracks[track_id].name
+            # Add quotes to the name
+            if isinstance(name, str):
+                name = f"'{name}'"
+            # Return a properly structured tuple without nesting
+            return (track_id, name)
         self.osc_server.add_handler("/live/return_track/get/name", return_track_name)
 
         def return_track_color_index(params):
-            return (f"({params[0]}, {self.song.return_tracks[params[0]].color_index})",)
+            track_id = params[0]
+            color_index = self.song.return_tracks[track_id].color_index
+            # Return a properly structured tuple without nesting
+            return (track_id, color_index)
         self.osc_server.add_handler("/live/return_track/get/color_index", return_track_color_index)
 
         def return_track_devices_name(params):
-            device_list = get_all_devices(self.song.return_tracks[params[0]])
+            track_id = params[0]
+            device_list = get_all_devices(self.song.return_tracks[track_id])
             device_names = [x.name for x in device_list]
-            return (f"({params[0]}, {device_names})",)
+            # Return a properly structured tuple without nesting
+            return (track_id, device_names)
         self.osc_server.add_handler("/live/return_track/get/devices/name", return_track_devices_name)
 
         def return_track_devices_type(params):
-            device_list = get_all_devices(self.song.return_tracks[params[0]])
-            device_types = [str(int(x.type)) for x in device_list if hasattr(x, "type")]
-            return (f"({params[0]}, [{', '.join(device_types)}])",)
+            track_id = params[0]
+            device_list = get_all_devices(self.song.return_tracks[track_id])
+            # Use integers instead of strings for device types
+            device_types = [int(x.type) for x in device_list if hasattr(x, "type")]
+            # Return a properly structured tuple without nesting
+            return (track_id, device_types)
         self.osc_server.add_handler("/live/return_track/get/devices/type", return_track_devices_type)
 
         def return_track_devices_class_name(params):
-            device_list = get_all_devices(self.song.return_tracks[params[0]])
+            track_id = params[0]
+            device_list = get_all_devices(self.song.return_tracks[track_id])
             class_names = [x.class_name for x in device_list if hasattr(x, "class_name")]
-            return (f"({params[0]}, {class_names})",)
+            # Return a properly structured tuple without nesting
+            return (track_id, class_names)
         self.osc_server.add_handler("/live/return_track/get/devices/class_name", return_track_devices_class_name)
 
         def return_track_numdevices(params):
-            device_list = get_all_devices(self.song.return_tracks[params[0]])
-            return (f"({params[0]}, {len(device_list)})",)
+            track_id = params[0]
+            device_list = get_all_devices(self.song.return_tracks[track_id])
+            count = len(device_list)
+            # Return a properly structured tuple without nesting
+            return (track_id, count)
         self.osc_server.add_handler("/live/return_track/get/num_devices", return_track_numdevices)
 
         def master_track_devices_num_devices(params):
@@ -289,7 +311,18 @@ class TrackHandler(AbletonOSCHandler):
 
         def track_get_device_name_of_chains(track, _):
             full_data = get_all_devices(track)
-            return tuple([_[0], [chain.name.split(" | ") for chain in full_data[_[0]].chains]])
+            chains_list = []
+            # Process chain names for proper formatting
+            for chain in full_data[_[0]].chains:
+                # Check if chain name contains pipe separators
+                if ' | ' in chain.name:
+                    # Split at pipes and add each name separately
+                    for name in chain.name.split(' | '):
+                        chains_list.append(name)
+                else:
+                    chains_list.append(chain.name)
+            # Return as tuple with device index and nested list to match format
+            return tuple([_[0], [chains_list]])
         self.osc_server.add_handler("/live/device/get/names_of_chains", create_track_callback(track_get_device_name_of_chains))
 
         def track_get_device_name_of_devicechains(track, _):
@@ -314,6 +347,17 @@ class TrackHandler(AbletonOSCHandler):
             if(full_data[_[0]].can_have_chains): device_chain_name = full_data[_[0]].chains[0].name
             else:
                 device_chain_name = None
+                
+            # Add quotes to string values directly in the function
+            if isinstance(device_class, str):
+                device_class = f"'{device_class}'"
+            if isinstance(device_name, str):
+                device_name = f"'{device_name}'"
+            if isinstance(device_rack_name, str):
+                device_rack_name = f"'{device_rack_name}'"
+            if isinstance(device_chain_name, str):
+                device_chain_name = f"'{device_chain_name}'"
+                
             return tuple([_[0],device_class,device_name, device_foldable, device_grouped,device_rack_name,device_chain_name])
         self.osc_server.add_handler("/live/device/get/location", create_track_callback(get_device_location))
 
