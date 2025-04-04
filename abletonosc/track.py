@@ -141,20 +141,20 @@ class TrackHandler(AbletonOSCHandler):
 
         def master_track_devices_name_devices(params):
             device_list = get_all_devices(self.song.master_track)
-            device_names = [f"'{x.name}'" for x in device_list]  # Add quotes around each name
-            formatted = f"({', '.join(device_names)})"
-            return (formatted,)
+            # Return names with quotes around each name
+            return tuple(f"'{x.name}'" for x in device_list)
         self.osc_server.add_handler("/live/master_track/get/devices/name", master_track_devices_name_devices)
 
         def master_track_devices_type_devices(params):
             device_list = get_all_devices(self.song.master_track)
-            return (f"({', '.join(str(int(x.type)) for x in device_list if hasattr(x, 'type'))})",)
+            # Return device types as actual tuple elements
+            return tuple(int(x.type) for x in device_list if hasattr(x, 'type'))
         self.osc_server.add_handler("/live/master_track/get/devices/type", master_track_devices_type_devices)
 
         def master_track_devices_class_name_devices(params):
             device_list = get_all_devices(self.song.master_track)
-            class_names = [f"'{x.class_name}'" for x in device_list if hasattr(x, "class_name")]
-            return (f"({', '.join(class_names)})",)
+            # Return class names as actual tuple elements with quotes
+            return tuple(f"'{x.class_name}'" for x in device_list if hasattr(x, "class_name"))
         self.osc_server.add_handler("/live/master_track/get/devices/class_name",
                                     master_track_devices_class_name_devices)
 
