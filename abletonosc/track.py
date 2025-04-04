@@ -152,7 +152,7 @@ class TrackHandler(AbletonOSCHandler):
         def master_track_devices_num_devices(params):
             device_list = get_all_devices(self.song.master_track)
             self.logger.info(device_list)
-            return (f"({len(device_list)},)",)
+            return (len(device_list),)
         self.osc_server.add_handler("/live/master_track/get/num_devices", master_track_devices_num_devices)
 
         def master_track_devices_name_devices(params):
