@@ -293,7 +293,11 @@ class TrackHandler(AbletonOSCHandler):
 
         def track_get_device_rack_device_name(track, _):
             full_data = get_all_devices(track)
-            return tuple([_[0],full_data[_[0]].name])
+            name = full_data[_[0]].name
+            # Add quotes to string values
+            if isinstance(name, str):
+                name = f"'{name}'"
+            return tuple([_[0], name])
         self.osc_server.add_handler("/live/device/get/rack_device_name", create_track_callback(track_get_device_rack_device_name))
 
         def track_get_device_is_grouped(track, _):
