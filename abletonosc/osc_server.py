@@ -82,8 +82,8 @@ class OSCServer:
             elif isinstance(value, list):
                 return list(process_value(v) for v in value)
             elif isinstance(value, str):
-                # Add quotes around string values
-                return f"'{value}'"
+                # Return string values without adding quotes
+                return value
             elif hasattr(value, '__iter__') and not isinstance(value, str):
                 return list(process_value(v) for v in value)
             else:

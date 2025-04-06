@@ -94,9 +94,8 @@ class TrackHandler(AbletonOSCHandler):
                     names.append(part)  # Don't add quotes, they will be added by OSC serializer
                 return (track_id, names)
             else:
-                # Add quotes to the name
-                if isinstance(name, str):
-                    name = f"'{name}'"
+                # Return the name without adding quotes
+                # Quote handling is now done in the OSC server
                 # Return a properly structured tuple without nesting
                 return (track_id, name)
         self.osc_server.add_handler("/live/return_track/get/name", return_track_name)
@@ -157,8 +156,8 @@ class TrackHandler(AbletonOSCHandler):
 
         def master_track_devices_name_devices(params):
             device_list = get_all_devices(self.song.master_track)
-            # Return names with quotes around each name
-            return tuple(f"'{x.name}'" for x in device_list)
+            # Return names without quotes
+            return tuple(x.name for x in device_list)
         self.osc_server.add_handler("/live/master_track/get/devices/name", master_track_devices_name_devices)
 
         def master_track_devices_type_devices(params):
@@ -169,8 +168,8 @@ class TrackHandler(AbletonOSCHandler):
 
         def master_track_devices_class_name_devices(params):
             device_list = get_all_devices(self.song.master_track)
-            # Return class names as actual tuple elements with quotes
-            return tuple(f"'{x.class_name}'" for x in device_list if hasattr(x, "class_name"))
+            # Return class names as actual tuple elements without quotes
+            return tuple(x.class_name for x in device_list if hasattr(x, "class_name"))
         self.osc_server.add_handler("/live/master_track/get/devices/class_name",
                                     master_track_devices_class_name_devices)
 
@@ -310,9 +309,7 @@ class TrackHandler(AbletonOSCHandler):
         def track_get_device_rack_device_name(track, _):
             full_data = get_all_devices(track)
             name = full_data[_[0]].name
-            # Add quotes to string values
-            if isinstance(name, str):
-                name = f"'{name}'"
+            # No need to add quotes, OSC server now handles strings properly
             return tuple([_[0], name])
         self.osc_server.add_handler("/live/device/get/rack_device_name", create_track_callback(track_get_device_rack_device_name))
 
@@ -368,15 +365,8 @@ class TrackHandler(AbletonOSCHandler):
             else:
                 device_chain_name = None
                 
-            # Add quotes to string values directly in the function
-            if isinstance(device_class, str):
-                device_class = f"'{device_class}'"
-            if isinstance(device_name, str):
-                device_name = f"'{device_name}'"
-            if isinstance(device_rack_name, str):
-                device_rack_name = f"'{device_rack_name}'"
-            if isinstance(device_chain_name, str):
-                device_chain_name = f"'{device_chain_name}'"
+            # No need to add quotes to string values
+            # The OSC server now handles string serialization properly
                 
             return tuple([_[0],device_class,device_name, device_foldable, device_grouped,device_rack_name,device_chain_name])
         self.osc_server.add_handler("/live/device/get/location", create_track_callback(get_device_location))
