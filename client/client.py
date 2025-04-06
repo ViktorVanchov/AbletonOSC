@@ -142,22 +142,25 @@ class AbletonOSCClient:
         def received_response(address, params):
             nonlocal rv
             nonlocal _event
-            # Clean up any quoted strings in nested lists to handle current protocol quirks
-            processed_params = []
-            for param in params:
-                if isinstance(param, list):
-                    processed_param = []
-                    for item in param:
-                        if isinstance(item, str) and item.startswith("'") and item.endswith("'"):
-                            processed_param.append(item[1:-1])
-                        else:
-                            processed_param.append(item)
-                    processed_params.append(processed_param)
-                elif isinstance(param, str) and param.startswith("'") and param.endswith("'"):
-                    processed_params.append(param[1:-1])
-                else:
-                    processed_params.append(param)
-            rv = tuple(processed_params)
+            
+            # Special case for device names to fix formatting
+            if address == "/live/return_track/get/devices/name":
+                processed_params = []
+                for i, param in enumerate(params):
+                    if i == 1 and isinstance(param, list):  # Second parameter is the list of device names
+                        clean_names = []
+                        for name in param:
+                            if isinstance(name, str) and name.startswith("'") and name.endswith("'"):
+                                clean_names.append(name[1:-1])
+                            else:
+                                clean_names.append(name)
+                        processed_params.append(clean_names)
+                    else:
+                        processed_params.append(param)
+                rv = tuple(processed_params)
+            else:
+                rv = params
+                
             _event.set()
 
         self.set_handler(address, received_response)

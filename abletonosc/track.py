@@ -110,17 +110,17 @@ class TrackHandler(AbletonOSCHandler):
         def return_track_devices_name(params):
             track_id = params[0]
             device_list = get_all_devices(self.song.return_tracks[track_id])
-            device_names = []
+            
+            # Get raw names without any processing
+            names = []
             for device in device_list:
-                # Check if device name contains pipe separators
-                if ' | ' in device.name:
-                    # Split at pipes and add each name separately
-                    for name in device.name.split(' | '):
-                        device_names.append(name)  # Don't add quotes
-                else:
-                    device_names.append(device.name)  # Don't add quotes
-            # Return a properly structured tuple with the list of names
-            return (track_id, device_names)
+                names.append(device.name)
+            
+            # Log what we're returning for debugging
+            self.logger.info(f"Returning device names: {names}")
+            
+            # Return device names in the standard tuple form
+            return (track_id, names)
         self.osc_server.add_handler("/live/return_track/get/devices/name", return_track_devices_name)
 
         def return_track_devices_type(params):

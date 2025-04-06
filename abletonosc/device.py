@@ -63,10 +63,8 @@ class DeviceHandler(AbletonOSCHandler):
                     if isinstance(rv, tuple):
                         rv = list(rv)
                     
-                    # Add quotes to string values in the return value
-                    for i in range(len(rv)):
-                        if isinstance(rv[i], str):
-                            rv[i] = f"'{rv[i]}'"
+                    # No need to add quotes to string values
+                    # The OSC server handles string serialization properly
                             
                     return (track_index, device_index, *rv)
 
