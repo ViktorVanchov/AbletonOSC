@@ -108,7 +108,12 @@ class SongHandler(AbletonOSCHandler):
                 track_index_min, track_index_max = params
                 if track_index_max == -1:
                     track_index_max = len(self.song.return_tracks)
-            return tuple(self.song.return_tracks[index].name for index in range(track_index_min, track_index_max))
+
+            names_tuple = tuple(
+                self.song.return_tracks[index].name
+                for index in range(track_index_min, track_index_max)
+            )
+            return (str(names_tuple),)
         self.osc_server.add_handler("/live/song/get/return_track_names", song_get_return_track_names)
 
 

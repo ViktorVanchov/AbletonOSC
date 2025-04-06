@@ -62,7 +62,8 @@ class DeviceHandler(AbletonOSCHandler):
                     if isinstance(rv, tuple):
                         rv = list(rv)
 
-                    return (track_index, device_index, *rv)
+                    data = (track_index, device_index, *rv)
+                    return (str(data),)
 
             return device_callback
 

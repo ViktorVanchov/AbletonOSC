@@ -75,3 +75,443 @@ IndexError: Index out of range
              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
 IndexError: Index out of range
 
+(2025-04-06 15:18:30,245) [INFO] Reloading abletonosc...
+(2025-04-06 15:18:30,246) [INFO] Reloaded code
+(2025-04-06 15:18:31,285) [WARNING] First1:[]
+(2025-04-06 15:18:31,285) [WARNING] First2:[]
+(2025-04-06 15:18:31,285) [WARNING] First2:['Reverb']
+(2025-04-06 15:18:31,285) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:18:53,702) [WARNING] First1:[]
+(2025-04-06 15:18:53,702) [WARNING] First2:[]
+(2025-04-06 15:18:53,702) [WARNING] First2:['Reverb']
+(2025-04-06 15:18:53,702) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:19:07,103) [INFO] [<Device.Device object at 0x000000002B596BC0>, <Device.Device object at 0x000000002B5962C0>, <Device.Device object at 0x000000002B596AC0>]
+(2025-04-06 15:19:15,916) [INFO] Getting property for device: name = Reverb
+(2025-04-06 15:19:18,899) [INFO] Getting property for device: class_name = Reverb
+(2025-04-06 15:19:31,949) [INFO] Getting property for device: type = audio_effect
+(2025-04-06 15:20:04,041) [INFO] Reloading abletonosc...
+(2025-04-06 15:20:04,043) [INFO] Reloaded code
+(2025-04-06 15:20:04,932) [WARNING] First1:[]
+(2025-04-06 15:20:04,932) [WARNING] First2:[]
+(2025-04-06 15:20:04,932) [WARNING] First2:['Reverb']
+(2025-04-06 15:20:04,932) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:21:53,772) [INFO] Reloading abletonosc...
+(2025-04-06 15:21:53,774) [INFO] Reloaded code
+(2025-04-06 15:21:54,460) [WARNING] First1:[]
+(2025-04-06 15:21:54,460) [WARNING] First2:[]
+(2025-04-06 15:21:54,460) [WARNING] First2:['Reverb']
+(2025-04-06 15:21:54,460) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:24:16,507) [INFO] Reloading abletonosc...
+(2025-04-06 15:24:16,508) [INFO] Reloaded code
+(2025-04-06 15:24:17,263) [WARNING] First1:[]
+(2025-04-06 15:24:17,263) [WARNING] First2:[]
+(2025-04-06 15:24:17,263) [WARNING] First2:['Reverb']
+(2025-04-06 15:24:17,263) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:28:02,582) [INFO] Reloading abletonosc...
+(2025-04-06 15:28:02,584) [INFO] Reloaded code
+(2025-04-06 15:31:48,294) [INFO] Reloading abletonosc...
+(2025-04-06 15:31:48,295) [INFO] Reloaded code
+(2025-04-06 15:32:44,925) [INFO] Reloading abletonosc...
+(2025-04-06 15:32:44,928) [INFO] Reloaded code
+(2025-04-06 15:33:56,078) [INFO] Reloading abletonosc...
+(2025-04-06 15:33:56,079) [INFO] Reloaded code
+(2025-04-06 15:34:04,421) [INFO] Reloading abletonosc...
+(2025-04-06 15:34:04,422) [INFO] Reloaded code
+(2025-04-06 15:34:28,620) [INFO] Reloading abletonosc...
+(2025-04-06 15:34:28,622) [INFO] Reloaded code
+(2025-04-06 15:38:20,004) [INFO] Reloading abletonosc...
+(2025-04-06 15:38:20,006) [INFO] Reloaded code
+(2025-04-06 16:31:47,701) [INFO] Reloading abletonosc...
+(2025-04-06 16:31:47,702) [INFO] Reloaded code
+(2025-04-06 16:32:29,739) [INFO] Reloading abletonosc...
+(2025-04-06 16:32:29,740) [INFO] Reloaded code
+(2025-04-06 16:32:36,695) [WARNING] First1:[]
+(2025-04-06 16:32:36,695) [WARNING] First2:[]
+(2025-04-06 16:32:36,695) [WARNING] First2:['Reverb']
+(2025-04-06 16:32:36,695) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 16:33:09,164) [INFO] Reloading abletonosc...
+(2025-04-06 16:33:09,166) [INFO] Reloaded code
+(2025-04-06 16:33:20,213) [INFO] Reloading abletonosc...
+(2025-04-06 16:33:20,215) [INFO] Reloaded code
+(2025-04-06 16:33:21,805) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-06 16:33:21,806) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 139, in return_track_devices_class_name
+    track_id = params[0]
+               ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-06 16:33:30,320) [INFO] [<Device.Device object at 0x000000000E7013C0>, <Device.Device object at 0x000000000E701540>, <Device.Device object at 0x000000000E701240>]
+(2025-04-06 16:34:01,514) [INFO] Reloading abletonosc...
+(2025-04-06 16:34:01,516) [INFO] Reloaded code
+(2025-04-06 16:34:08,071) [INFO] [<Device.Device object at 0x000000000E8D3C40>, <Device.Device object at 0x000000000E8D3BC0>, <Device.Device object at 0x000000000E8D3B40>]
+(2025-04-06 16:35:01,984) [INFO] Reloading abletonosc...
+(2025-04-06 16:35:01,986) [INFO] Reloaded code
+(2025-04-06 16:35:17,121) [INFO] Reloading abletonosc...
+(2025-04-06 16:35:17,123) [INFO] Reloaded code
+(2025-04-06 16:36:04,446) [INFO] Reloading abletonosc...
+(2025-04-06 16:36:04,447) [INFO] Reloaded code
+(2025-04-06 16:36:09,472) [INFO] Reloading abletonosc...
+(2025-04-06 16:36:09,474) [INFO] Reloaded code
+(2025-04-06 16:37:39,882) [INFO] Reloading abletonosc...
+(2025-04-06 16:37:39,884) [INFO] Reloaded code
+(2025-04-06 16:37:47,088) [INFO] Getting property for device: name = Reverb
+(2025-04-06 16:38:36,356) [INFO] Reloading abletonosc...
+(2025-04-06 16:38:36,357) [INFO] Reloaded code
+(2025-04-06 16:38:37,478) [INFO] Getting property for device: name = Reverb
+(2025-04-06 16:47:18,506) [INFO] Getting property for device: name = Reverb
+(2025-04-06 16:55:18,132) [INFO] Reloading abletonosc...
+(2025-04-06 16:55:18,138) [INFO] Reloaded code
+(2025-04-06 16:55:18,764) [INFO] Getting property for device: name = Reverb
+(2025-04-06 16:56:40,887) [INFO] Reloading abletonosc...
+(2025-04-06 16:56:40,888) [INFO] Reloaded code
+(2025-04-06 16:56:41,692) [INFO] Getting property for device: name = Reverb
+(2025-04-06 16:59:37,549) [INFO] Reloading abletonosc...
+(2025-04-06 16:59:37,550) [INFO] Reloaded code
+(2025-04-06 16:59:38,304) [INFO] Getting property for device: name = Reverb
+(2025-04-06 16:59:55,565) [INFO] Reloading abletonosc...
+(2025-04-06 16:59:55,568) [INFO] Reloaded code
+(2025-04-06 17:00:05,678) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:05:31,870) [INFO] Reloading abletonosc...
+(2025-04-06 17:05:31,872) [INFO] Reloaded code
+(2025-04-06 17:05:32,578) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:05:53,463) [INFO] Reloading abletonosc...
+(2025-04-06 17:05:53,464) [INFO] Reloaded code
+(2025-04-06 17:05:54,275) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:06:05,986) [INFO] Reloading abletonosc...
+(2025-04-06 17:06:05,987) [INFO] Reloaded code
+(2025-04-06 17:06:06,608) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:07:41,804) [INFO] Reloading abletonosc...
+(2025-04-06 17:07:41,805) [INFO] Reloaded code
+(2025-04-06 17:07:42,810) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:10:30,401) [INFO] Reloading abletonosc...
+(2025-04-06 17:10:30,403) [INFO] Reloaded code
+(2025-04-06 17:10:31,292) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:11:21,048) [INFO] Reloading abletonosc...
+(2025-04-06 17:11:21,049) [INFO] Reloaded code
+(2025-04-06 17:11:21,877) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:14:05,263) [INFO] Reloading abletonosc...
+(2025-04-06 17:14:05,264) [INFO] Reloaded code
+(2025-04-06 17:14:11,852) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:16:48,078) [INFO] Reloading abletonosc...
+(2025-04-06 17:16:48,080) [INFO] Reloaded code
+(2025-04-06 17:16:48,786) [WARNING] DEBUG: track_callback called with params: [6, 0]
+(2025-04-06 17:16:48,786) [WARNING] DEBUG: Processing track_index: 6
+(2025-04-06 17:16:48,786) [WARNING] DEBUG: rv from func for track_index 6: (0, 'Reverb')
+(2025-04-06 17:16:48,786) [WARNING] DEBUG about to return: ("(6, 0, 'Reverb')",)
+(2025-04-06 17:22:15,347) [INFO] Reloading abletonosc...
+(2025-04-06 17:22:15,349) [INFO] Reloaded code
+(2025-04-06 17:22:16,271) [INFO] Logs:[(<Track.Track object at 0x000000003B2F65C0>, <Track.Track object at 0x000000003B2F6540>, <Track.Track object at 0x000000003B2F64C0>, <Track.Track object at 0x000000003B2F6440>, <Track.Track object at 0x000000003B2F63C0>, <Track.Track object at 0x000000003B2F6340>, <Track.Track object at 0x000000003B2F6240>, <Track.Track object at 0x000000003B2F61C0>, <Track.Track object at 0x00000000007156C0>)]
+(2025-04-06 17:25:01,229) [INFO] Reloading abletonosc...
+(2025-04-06 17:25:01,230) [INFO] Reloaded code
+(2025-04-06 17:25:01,818) [INFO] Logs:[(<Track.Track object at 0x000000003B2ABE40>, <Track.Track object at 0x000000003B2ABEC0>, <Track.Track object at 0x000000003B2ABF40>, <Track.Track object at 0x000000003B2AB9C0>, <Track.Track object at 0x000000003B2A8040>, <Track.Track object at 0x000000003B2AB940>, <Track.Track object at 0x000000003B2A83C0>, <Track.Track object at 0x000000003B2F5740>, <Track.Track object at 0x000000000E765A40>)]
+(2025-04-06 17:25:01,818) [ERROR] AbletonOSC: Error handling OSC message: 'Track' object has no attribute 'index'
+(2025-04-06 17:25:01,819) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 401, in device_get_name
+    return (f"({track.index}, {device_index}, '{device_name}')",)
+                ^^^^^^^^^^^
+AttributeError: 'Track' object has no attribute 'index'
+
+(2025-04-06 17:25:13,343) [INFO] Reloading abletonosc...
+(2025-04-06 17:25:13,345) [INFO] Reloaded code
+(2025-04-06 17:25:13,950) [INFO] Logs:[(<Track.Track object at 0x000000003B2DF5C0>, <Track.Track object at 0x000000003B2DF540>, <Track.Track object at 0x000000003B2DF4C0>, <Track.Track object at 0x000000003B2DF440>, <Track.Track object at 0x000000003B2DF3C0>, <Track.Track object at 0x000000003B2DF340>, <Track.Track object at 0x000000003B2DF240>, <Track.Track object at 0x000000003B2DF1C0>, <Track.Track object at 0x000000003B2DF640>)]
+(2025-04-06 17:26:50,884) [INFO] Reloading abletonosc...
+(2025-04-06 17:26:50,885) [INFO] Reloaded code
+(2025-04-06 17:26:51,673) [INFO] Logs:[(<Track.Track object at 0x000000003B2F5040>, <Track.Track object at 0x000000003B2F50C0>, <Track.Track object at 0x000000003B2F5140>, <Track.Track object at 0x000000003B2F51C0>, <Track.Track object at 0x000000003B2F5240>, <Track.Track object at 0x000000003B2F52C0>, <Track.Track object at 0x000000003B2F5440>, <Track.Track object at 0x000000003B2F53C0>, <Track.Track object at 0x0000000000689AC0>)]
+(2025-04-06 17:27:03,600) [INFO] Getting property for device: class_name = Reverb
+(2025-04-06 17:28:01,275) [INFO] Reloading abletonosc...
+(2025-04-06 17:28:01,277) [INFO] Reloaded code
+(2025-04-06 17:28:02,216) [INFO] Getting property for device: class_name = Reverb
+(2025-04-06 17:28:02,216) [ERROR] AbletonOSC: Error handling OSC message: str() argument 'encoding' must be str, not int
+(2025-04-06 17:28:02,217) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\device.py", line 65, in device_callback
+    return (str(track_index, device_index, *rv),)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: str() argument 'encoding' must be str, not int
+
+(2025-04-06 17:28:36,848) [INFO] Reloading abletonosc...
+(2025-04-06 17:28:36,849) [INFO] Reloaded code
+(2025-04-06 17:28:37,574) [INFO] Getting property for device: class_name = Reverb
+(2025-04-06 17:30:52,476) [INFO] Reloading abletonosc...
+(2025-04-06 17:30:52,477) [INFO] Reloaded code
+(2025-04-06 17:30:53,201) [INFO] Getting property for device: class_name = Reverb
+(2025-04-06 17:30:58,736) [INFO] Getting property for device: type = audio_effect
+(2025-04-06 17:31:12,409) [INFO] Reloading abletonosc...
+(2025-04-06 17:31:12,411) [INFO] Reloaded code
+(2025-04-06 17:31:13,134) [INFO] Getting property for device: type = audio_effect
+(2025-04-06 17:31:40,693) [INFO] Reloading abletonosc...
+(2025-04-06 17:31:40,694) [INFO] Reloaded code
+(2025-04-06 17:31:41,701) [INFO] Getting property for device: type = audio_effect
+(2025-04-06 17:33:27,504) [INFO] Reloading abletonosc...
+(2025-04-06 17:33:27,506) [INFO] Reloaded code
+(2025-04-06 17:33:28,279) [INFO] Getting property for device: type = audio_effect
+(2025-04-06 17:34:18,998) [INFO] Reloading abletonosc...
+(2025-04-06 17:34:18,999) [INFO] Reloaded code
+(2025-04-06 17:34:19,940) [INFO] Getting property for device: type = audio_effect
+(2025-04-06 17:35:33,210) [INFO] Reloading abletonosc...
+(2025-04-06 17:35:33,213) [INFO] Reloaded code
+(2025-04-06 17:35:33,834) [INFO] Getting property for device: type = audio_effect
+(2025-04-06 17:36:41,073) [INFO] Reloading abletonosc...
+(2025-04-06 17:36:41,075) [INFO] Reloaded code
+(2025-04-06 17:36:42,101) [INFO] Getting property for device: type = 2
+(2025-04-06 17:37:09,436) [INFO] Logs:[(<Track.Track object at 0x000000003B413BC0>, <Track.Track object at 0x000000003B412F40>, <Track.Track object at 0x000000003B413140>, <Track.Track object at 0x000000003B412640>, <Track.Track object at 0x000000003B410A40>, <Track.Track object at 0x000000003B399640>, <Track.Track object at 0x000000003B39AE40>, <Track.Track object at 0x000000003B399440>, <Track.Track object at 0x000000003B3BD840>)]
+(2025-04-06 17:37:28,669) [INFO] Logs:[(<Track.Track object at 0x000000003B410A40>, <Track.Track object at 0x000000003B39B6C0>, <Track.Track object at 0x000000003B399440>, <Track.Track object at 0x000000003B39AE40>, <Track.Track object at 0x000000003B39BBC0>, <Track.Track object at 0x000000003B399640>, <Track.Track object at 0x000000003B3BFEC0>, <Track.Track object at 0x000000003B3BE240>, <Track.Track object at 0x000000003B412640>)]
+(2025-04-06 17:37:31,004) [INFO] Getting property for device: class_name = Reverb
+(2025-04-06 17:37:38,711) [INFO] Reloading abletonosc...
+(2025-04-06 17:37:38,712) [INFO] Reloaded code
+(2025-04-06 17:37:39,852) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:45:35,258) [INFO] Reloading abletonosc...
+(2025-04-06 17:45:35,260) [INFO] Reloaded code
+(2025-04-06 17:45:35,980) [INFO] Logs:[(<Track.Track object at 0x000000003B5151C0>, <Track.Track object at 0x000000003B517CC0>, <Track.Track object at 0x000000003B517C40>, <Track.Track object at 0x000000003B517BC0>, <Track.Track object at 0x000000003B517B40>, <Track.Track object at 0x000000003B517AC0>, <Track.Track object at 0x000000003B5179C0>, <Track.Track object at 0x000000003B517940>, <Track.Track object at 0x000000003B498B40>)]
+(2025-04-06 17:45:49,810) [INFO] Reloading abletonosc...
+(2025-04-06 17:45:49,811) [INFO] Reloaded code
+(2025-04-06 17:45:50,617) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-06 17:45:50,617) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 15, in track_callback
+    if params[0] == "*":
+       ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-06 17:45:54,250) [INFO] Logs:[(<Track.Track object at 0x000000003B5628C0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5627C0>, <Track.Track object at 0x000000003B562740>, <Track.Track object at 0x000000003B5626C0>, <Track.Track object at 0x000000003B562640>, <Track.Track object at 0x000000003B562540>, <Track.Track object at 0x000000003B5624C0>, <Track.Track object at 0x000000000E7015C0>)]
+(2025-04-06 17:46:06,594) [INFO] Reloading abletonosc...
+(2025-04-06 17:46:06,595) [INFO] Reloaded code
+(2025-04-06 17:46:07,349) [INFO] Logs:[(<Track.Track object at 0x000000003B5165C0>, <Track.Track object at 0x000000003B516540>, <Track.Track object at 0x000000003B5164C0>, <Track.Track object at 0x000000003B516440>, <Track.Track object at 0x000000003B5163C0>, <Track.Track object at 0x000000003B516340>, <Track.Track object at 0x000000003B5162C0>, <Track.Track object at 0x000000003B5161C0>, <Track.Track object at 0x000000000E7667C0>)]
+(2025-04-06 17:47:57,587) [INFO] Reloading abletonosc...
+(2025-04-06 17:47:57,588) [INFO] Reloaded code
+(2025-04-06 17:48:06,460) [INFO] Logs:[(<Track.Track object at 0x000000003B5AB740>, <Track.Track object at 0x000000003B5AB4C0>, <Track.Track object at 0x000000003B5AB540>, <Track.Track object at 0x000000003B5AB340>, <Track.Track object at 0x000000003B5AB2C0>, <Track.Track object at 0x000000003B5AB1C0>, <Track.Track object at 0x000000003B5AB7C0>, <Track.Track object at 0x000000003B5AB6C0>, <Track.Track object at 0x000000003B5AB840>)]
+(2025-04-06 17:48:09,593) [INFO] Logs:[(<Track.Track object at 0x000000003B5AB7C0>, <Track.Track object at 0x000000003B5AB740>, <Track.Track object at 0x000000003B5AB840>, <Track.Track object at 0x000000003B5AB640>, <Track.Track object at 0x000000003B5AB6C0>, <Track.Track object at 0x000000003B5AB240>, <Track.Track object at 0x000000003B5AB2C0>, <Track.Track object at 0x000000003B5AB4C0>, <Track.Track object at 0x000000003B5AB1C0>)]
+(2025-04-06 17:48:12,043) [INFO] Logs:[(<Track.Track object at 0x000000003B5AB2C0>, <Track.Track object at 0x000000003B5AB7C0>, <Track.Track object at 0x000000003B5AB1C0>, <Track.Track object at 0x000000003B5AB140>, <Track.Track object at 0x000000003B5AB4C0>, <Track.Track object at 0x000000003B5AB540>, <Track.Track object at 0x000000003B5AB6C0>, <Track.Track object at 0x000000003B5AB740>, <Track.Track object at 0x000000003B5AB240>)]
+(2025-04-06 17:48:23,104) [INFO] Reloading abletonosc...
+(2025-04-06 17:48:23,105) [INFO] Reloaded code
+(2025-04-06 17:48:23,793) [INFO] Logs:[(<Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:48:29,193) [INFO] Logs:[(<Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:48:29,194) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-06 17:48:29,195) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 323, in track_get_device_is_grouped
+    if(str(type(full_data[_[0]].canonical_parent)) == "<class 'Chain.Chain'>"):#hasattr(full_data[_[0]].canonical_parent, 'chains')):
+                ~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+(2025-04-06 17:48:30,760) [INFO] Logs:[(<Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:48:32,225) [INFO] Logs:[(<Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:48:34,843) [INFO] Logs:[(<Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:48:34,844) [ERROR] AbletonOSC: Error handling OSC message: 'Device' object has no attribute 'chains'
+(2025-04-06 17:48:34,844) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 331, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                            ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Device' object has no attribute 'chains'
+
+(2025-04-06 17:48:36,309) [INFO] Logs:[(<Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:48:47,161) [INFO] Logs:[(<Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:48:48,542) [INFO] Logs:[(<Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:48:52,462) [INFO] Logs:[(<Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:48:52,463) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-06 17:48:52,463) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 357, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+(2025-04-06 17:48:53,339) [INFO] Logs:[(<Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:48:53,340) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-06 17:48:53,340) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 357, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+(2025-04-06 17:49:05,506) [WARNING] First1:[]
+(2025-04-06 17:49:05,507) [WARNING] First2:[]
+(2025-04-06 17:49:05,507) [WARNING] First2:['Reverb']
+(2025-04-06 17:49:05,507) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 17:49:06,122) [WARNING] First1:[]
+(2025-04-06 17:49:06,122) [WARNING] First2:[]
+(2025-04-06 17:49:06,122) [WARNING] First2:['Reverb']
+(2025-04-06 17:49:06,122) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 17:49:06,440) [INFO] [<Device.Device object at 0x000000003B561AC0>, <Device.Device object at 0x000000003B562840>, <Device.Device object at 0x000000003B560F40>]
+(2025-04-06 17:49:06,855) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:49:06,954) [INFO] Getting property for device: class_name = Reverb
+(2025-04-06 17:49:07,055) [INFO] Getting property for device: type = 2
+(2025-04-06 17:49:07,922) [INFO] Logs:[(<Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:49:08,221) [INFO] Logs:[(<Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:49:08,321) [INFO] Logs:[(<Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B5601C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:49:08,538) [INFO] Logs:[(<Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5601C0>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B5161C0>, <Track.Track object at 0x000000003B560340>)]
+(2025-04-06 17:49:08,538) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-06 17:49:08,539) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 323, in track_get_device_is_grouped
+    if(str(type(full_data[_[0]].canonical_parent)) == "<class 'Chain.Chain'>"):#hasattr(full_data[_[0]].canonical_parent, 'chains')):
+                ~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+(2025-04-06 17:49:08,638) [INFO] Logs:[(<Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:49:08,638) [ERROR] AbletonOSC: Error handling OSC message: 'Device' object has no attribute 'chains'
+(2025-04-06 17:49:08,639) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 331, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                            ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Device' object has no attribute 'chains'
+
+(2025-04-06 17:49:08,955) [INFO] Logs:[(<Track.Track object at 0x000000003B5601C0>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:49:09,054) [INFO] Logs:[(<Track.Track object at 0x000000003B5601C0>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:49:09,055) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-06 17:49:09,055) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 357, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+(2025-04-06 17:50:03,467) [WARNING] First1:[]
+(2025-04-06 17:50:03,468) [WARNING] First2:[]
+(2025-04-06 17:50:03,468) [WARNING] First2:['Reverb']
+(2025-04-06 17:50:03,468) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 17:50:04,100) [WARNING] First1:[]
+(2025-04-06 17:50:04,100) [WARNING] First2:[]
+(2025-04-06 17:50:04,101) [WARNING] First2:['Reverb']
+(2025-04-06 17:50:04,101) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 17:50:04,416) [INFO] [<Device.Device object at 0x000000003B560F40>, <Device.Device object at 0x000000003B561AC0>, <Device.Device object at 0x000000003B5601C0>]
+(2025-04-06 17:50:04,834) [INFO] Getting property for device: name = Reverb
+(2025-04-06 17:50:04,934) [INFO] Getting property for device: class_name = Reverb
+(2025-04-06 17:50:05,049) [INFO] Getting property for device: type = 2
+(2025-04-06 17:50:05,851) [INFO] Logs:[(<Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5161C0>)]
+(2025-04-06 17:50:06,166) [INFO] Logs:[(<Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:50:06,283) [INFO] Logs:[(<Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:50:06,500) [INFO] Logs:[(<Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B5161C0>, <Track.Track object at 0x000000003B5606C0>)]
+(2025-04-06 17:50:06,500) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-06 17:50:06,501) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 323, in track_get_device_is_grouped
+    if(str(type(full_data[_[0]].canonical_parent)) == "<class 'Chain.Chain'>"):#hasattr(full_data[_[0]].canonical_parent, 'chains')):
+                ~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+(2025-04-06 17:50:06,600) [INFO] Logs:[(<Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:50:06,817) [INFO] Logs:[(<Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B560140>, <Track.Track object at 0x000000003B561040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5606C0>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:50:47,533) [INFO] Logs:[(<Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B5601C0>, <Track.Track object at 0x000000003B5602C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B560340>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:50:47,533) [ERROR] AbletonOSC: Error handling OSC message: list indices must be integers or slices, not str
+(2025-04-06 17:50:47,534) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 26, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 357, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+(2025-04-06 17:50:48,916) [INFO] Logs:[(<Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B5601C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B515740>)]

@@ -35,11 +35,9 @@ class AbletonOSCHandler(Component):
     def _get_property(self, target, prop, params: Optional[Tuple] = ()) -> Tuple[Any]:
         try:
             value = getattr(target, prop)
+            if prop == 'type':
+                value = int(value)  # Force to numeric code here
         except RuntimeError:
-            #--------------------------------------------------------------------------------
-            # Gracefully handle errors, which may occur when querying parameters that don't apply
-            # to a particular object (e.g. track.fold_state for a non-group track)
-            #--------------------------------------------------------------------------------
             value = None
         self.logger.info("Getting property for %s: %s = %s" % (self.class_identifier, prop, value))
         return (value, *params)
