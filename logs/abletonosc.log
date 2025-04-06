@@ -1,0 +1,77 @@
+(2025-04-06 15:10:28,246) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2025-04-06 15:10:41,106) [INFO] Reloading abletonosc...
+(2025-04-06 15:10:41,107) [INFO] Reloaded code
+(2025-04-06 15:10:42,768) [WARNING] First1:[]
+(2025-04-06 15:10:42,768) [WARNING] First2:[]
+(2025-04-06 15:10:42,769) [WARNING] Test1:['Reverb']
+(2025-04-06 15:10:49,054) [INFO] Disconnecting...
+(2025-04-06 15:10:49,772) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2025-04-06 15:10:55,671) [INFO] Reloading abletonosc...
+(2025-04-06 15:10:55,673) [INFO] Reloaded code
+(2025-04-06 15:10:56,585) [WARNING] First1:[]
+(2025-04-06 15:10:56,587) [WARNING] First2:[]
+(2025-04-06 15:10:56,587) [WARNING] First2:['Reverb']
+(2025-04-06 15:10:56,587) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:11:03,252) [ERROR] AbletonOSC: Unknown OSC address: /live/song/get/return_track_names
+(2025-04-06 15:11:28,951) [WARNING] First1:[]
+(2025-04-06 15:11:28,952) [WARNING] First2:[]
+(2025-04-06 15:11:28,952) [WARNING] First2:['Reverb']
+(2025-04-06 15:11:28,952) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:11:38,319) [INFO] [<Device.Device object at 0x000000002B5941C0>, <Device.Device object at 0x000000002B594040>, <Device.Device object at 0x000000002B594AC0>]
+(2025-04-06 15:14:31,732) [INFO] Reloading abletonosc...
+(2025-04-06 15:14:31,733) [INFO] Reloaded code
+(2025-04-06 15:14:35,440) [WARNING] First1:[]
+(2025-04-06 15:14:35,440) [WARNING] First2:[]
+(2025-04-06 15:14:35,440) [WARNING] First2:['Reverb']
+(2025-04-06 15:14:35,440) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:14:38,441) [ERROR] AbletonOSC: Unknown OSC address: /live/song/get/return_track_names
+(2025-04-06 15:14:40,157) [ERROR] AbletonOSC: Unknown OSC address: /live/song/get/return_track_names
+(2025-04-06 15:14:49,525) [WARNING] First1:[]
+(2025-04-06 15:14:49,525) [WARNING] First2:[]
+(2025-04-06 15:14:49,525) [WARNING] First2:['Reverb']
+(2025-04-06 15:14:49,525) [WARNING] Test1:['Reverb', 'Gate']
+(2025-04-06 15:14:55,175) [INFO] [<Device.Device object at 0x0000000020167CC0>, <Device.Device object at 0x0000000020167F40>, <Device.Device object at 0x00000000201677C0>]
+(2025-04-06 15:15:02,448) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2025-04-06 15:15:02,451) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\device.py", line 13, in device_callback
+    device = self.song.tracks[track_index].devices[device_index]
+             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+IndexError: Index out of range
+
+(2025-04-06 15:15:06,932) [INFO] Getting property for device: name = Filter Delay
+(2025-04-06 15:15:14,415) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2025-04-06 15:15:14,416) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\device.py", line 13, in device_callback
+    device = self.song.tracks[track_index].devices[device_index]
+             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+IndexError: Index out of range
+
+(2025-04-06 15:15:17,132) [INFO] Getting property for device: class_name = FilterDelay
+(2025-04-06 15:15:19,966) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2025-04-06 15:15:19,966) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\device.py", line 13, in device_callback
+    device = self.song.tracks[track_index].devices[device_index]
+             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+IndexError: Index out of range
+

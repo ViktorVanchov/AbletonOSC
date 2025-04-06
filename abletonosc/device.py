@@ -59,15 +59,9 @@ class DeviceHandler(AbletonOSCHandler):
                     rv = func(device, *args, params[2:])
 
                 if rv is not None:
-                    # Convert any return values to a list before packaging
                     if isinstance(rv, tuple):
                         rv = list(rv)
-                    
-                    # Add quotes to string values in the return value
-                    for i in range(len(rv)):
-                        if isinstance(rv[i], str):
-                            rv[i] = f"'{rv[i]}'"
-                            
+
                     return (track_index, device_index, *rv)
 
             return device_callback
