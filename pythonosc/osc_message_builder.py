@@ -153,9 +153,6 @@ class OscMessageBuilder(object):
             dgram += osc_types.write_string(',' + arg_types)
             for arg_type, value in self._args:
                 if arg_type == self.ARG_TYPE_STRING:
-                    # If string is surrounded by single quotes, remove them before encoding
-                    if isinstance(value, str) and value.startswith("'") and value.endswith("'"):
-                        value = value[1:-1]
                     dgram += osc_types.write_string(value)  # type: ignore[arg-type]
                 elif arg_type == self.ARG_TYPE_INT:
                     dgram += osc_types.write_int(value)  # type: ignore[arg-type]

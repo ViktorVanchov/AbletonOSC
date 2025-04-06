@@ -142,25 +142,7 @@ class AbletonOSCClient:
         def received_response(address, params):
             nonlocal rv
             nonlocal _event
-            
-            # Special case for device names to fix formatting
-            if address == "/live/return_track/get/devices/name":
-                processed_params = []
-                for i, param in enumerate(params):
-                    if i == 1 and isinstance(param, list):  # Second parameter is the list of device names
-                        clean_names = []
-                        for name in param:
-                            if isinstance(name, str) and name.startswith("'") and name.endswith("'"):
-                                clean_names.append(name[1:-1])
-                            else:
-                                clean_names.append(name)
-                        processed_params.append(clean_names)
-                    else:
-                        processed_params.append(param)
-                rv = tuple(processed_params)
-            else:
-                rv = params
-                
+            rv = params
             _event.set()
 
         self.set_handler(address, received_response)
