@@ -73,26 +73,7 @@ class OSCServer:
                          If None, uses the default remote address.
         """
         msg_builder = OscMessageBuilder(address)
-        # Convert params to ensure proper handling of nested structures
-        processed_params = []
-        
-        def process_value(value):
-            if isinstance(value, tuple):
-                return list(process_value(v) for v in value)
-            elif isinstance(value, list):
-                return list(process_value(v) for v in value)
-            elif isinstance(value, str):
-                # Add quotes around string values
-                return f"'{value}'"
-            elif hasattr(value, '__iter__') and not isinstance(value, str):
-                return list(process_value(v) for v in value)
-            else:
-                return value
-                
         for param in params:
-            processed_params.append(process_value(param))
-        
-        for param in processed_params:
             msg_builder.add_arg(param)
 
         try:

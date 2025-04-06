@@ -253,8 +253,6 @@ def main(args):
         "/live/device/get/parameter/value",
         "/live/device/get/parameter/value_string",
         "/live/device/set/parameter/value",
-        "/live/device/get/names_of_chains",
-        "/live/device/get/is_foldable"
         # Add more addresses as needed
     ]
 
@@ -310,8 +308,8 @@ def main(args):
             params.append(part)
         try:
             rv = client.query(command, params)
-            rv_str = "(" + ", ".join(str(part) for part in rv) + ")"
-            print(rv_str)
+            rv = ", ".join(str(part) for part in rv)
+            print(rv)
         except RuntimeError:
             pass
 
