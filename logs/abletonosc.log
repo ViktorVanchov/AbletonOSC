@@ -515,3 +515,39 @@ IndexError: list index out of range
 TypeError: list indices must be integers or slices, not str
 
 (2025-04-06 17:50:48,916) [INFO] Logs:[(<Track.Track object at 0x000000003B560F40>, <Track.Track object at 0x000000003B561AC0>, <Track.Track object at 0x000000003B5601C0>, <Track.Track object at 0x000000003B560040>, <Track.Track object at 0x000000003B560740>, <Track.Track object at 0x000000003B562840>, <Track.Track object at 0x000000003B5618C0>, <Track.Track object at 0x000000003B5600C0>, <Track.Track object at 0x000000003B515740>)]
+(2025-04-06 17:52:25,729) [INFO] Disconnecting...
+(2025-04-08 21:08:35,325) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2025-04-08 21:08:38,371) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-08 21:08:38,457) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-08 21:08:48,328) [INFO] Disconnecting...
+(2025-04-08 21:08:49,048) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2025-04-08 21:08:49,455) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-08 21:08:49,555) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-08 21:09:07,464) [INFO] Reloading abletonosc...
+(2025-04-08 21:09:07,466) [INFO] Reloaded code
+(2025-04-08 21:09:24,050) [INFO] Reloading abletonosc...
+(2025-04-08 21:09:24,052) [INFO] Reloaded code
+(2025-04-08 21:11:43,715) [INFO] Reloading abletonosc...
+(2025-04-08 21:11:43,737) [INFO] Reloaded code
+(2025-04-08 21:12:44,297) [INFO] Reloading abletonosc...
+(2025-04-08 21:12:44,299) [INFO] Reloaded code

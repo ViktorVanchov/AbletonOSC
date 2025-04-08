@@ -85,18 +85,8 @@ class TrackHandler(AbletonOSCHandler):
         def return_track_name(params):
             track_id = params[0]
             name = self.song.return_tracks[track_id].name
-            
-            # Check if name contains pipe separators and split it into a list
-            # Build a two-element Python tuple:
-            if isinstance(name, str) and ' | ' in name:
-                # name -> list
-                names_list = name.split(' | ')
-                data_tuple = (track_id, names_list)
-            else:
-                # Possibly add quotes if you like
-                if isinstance(name, str):
-                    name = f"'{name}'"
-                data_tuple = (track_id, name)
+
+            data_tuple = (track_id, name)
             return (str(data_tuple),)
         self.osc_server.add_handler("/live/return_track/get/name", return_track_name)
 
