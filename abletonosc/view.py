@@ -12,7 +12,7 @@ class ViewHandler(AbletonOSCHandler):
             return (list(self.song.scenes).index(self.song.view.selected_scene),)
 
         def get_selected_track(params: Optional[Tuple] = ()):
-            return (list(self.song.tracks).index(self.song.view.selected_track),)
+            return ((list(self.song.tracks) + list(self.song.return_tracks) + [self.song.master_track]).index(self.song.view.selected_track),)
 
         def get_selected_clip(params: Optional[Tuple] = ()):
             return (get_selected_track()[0], get_selected_scene()[0])

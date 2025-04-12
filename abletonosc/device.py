@@ -6,7 +6,8 @@ def get_all_sub_rack_devices(rack):
     all_sub_devices = []
     for chain in rack.chains:
         for device in chain.devices:
-            if (str(type(device)) == "<class 'RackDevice.RackDevice'>"):
+            print(f"Test:{str(type(device))}")
+            if ("<class 'RackDevice.RackDevice'>" in str(type(device))):
                 all_sub_devices.extend([device])
                 sub_devices = get_all_sub_rack_devices(device)
                 all_sub_devices.extend(sub_devices)
@@ -32,6 +33,7 @@ def get_all_devices(track):
             for chain in rack.chains:
                 for device in chain.devices:
                     devices.append(device)
+                    print(str(type(device)))
                     if ("RackDevice" in str(type(device))):
                         sub_devices = get_all_sub_rack_devices(device)
                         devices.extend(sub_devices)
@@ -63,7 +65,7 @@ class DeviceHandler(AbletonOSCHandler):
                         rv = list(rv)
 
                     data = (track_index, device_index, *rv)
-                    return (str(data),)
+                    return (data)
 
             return device_callback
 

@@ -18,7 +18,6 @@ class TrackHandler(AbletonOSCHandler):
                     track_indices = [int(params[0])]
 
                 for track_index in track_indices:
-                    self.logger.info(f"Logs:{[self.song.tracks + self.song.return_tracks + (self.song.master_track,)]}")
                     track = [self.song.tracks + self.song.return_tracks + (self.song.master_track,)][0][track_index]
                     if include_track_id:
                         rv = func(track, *args, tuple([track_index] + params[1:]))
@@ -26,7 +25,7 @@ class TrackHandler(AbletonOSCHandler):
                         rv = func(track, *args, tuple(params[1:]))
 
                     if rv is not None:
-                        return (str((track_index, *rv)),)
+                        return (track_index, *rv)
 
             return track_callback
 
@@ -79,7 +78,7 @@ class TrackHandler(AbletonOSCHandler):
         def return_track_color(params):
             track_id = params[0]
             color = self.song.return_tracks[track_id].color
-            return (f"({track_id}, {color})",)
+            return (track_id, color)
         self.osc_server.add_handler("/live/return_track/get/color", return_track_color)
 
         def return_track_name(params):
@@ -87,33 +86,28 @@ class TrackHandler(AbletonOSCHandler):
             name = self.song.return_tracks[track_id].name
 
             data_tuple = (track_id, name)
-            return (str(data_tuple),)
+            return (data_tuple)
         self.osc_server.add_handler("/live/return_track/get/name", return_track_name)
 
         def return_track_color_index(params):
             track_id = params[0]
             color_index = self.song.return_tracks[track_id].color_index
-            return (f"({track_id}, {color_index})",)
+            return (track_id, color_index,)
         self.osc_server.add_handler("/live/return_track/get/color_index", return_track_color_index)
 
         def return_track_devices_name(params):
             track_id = params[0]
             device_list = get_all_devices(self.song.return_tracks[track_id])
             device_names = []
-            self.logger.warning(f"First1:{device_names}")
             for device in device_list:
-                # Check if device name contains pipe separators
-                self.logger.warning(f"First2:{device_names}")
                 if ' | ' in device.name:
-                    # Split at pipes and add each name separately
                     for name in device.name.split(' | '):
                         device_names.append(name)  # Don't add quotes
                 else:
                     device_names.append(device.name)  # Don't add quotes
             # Return a properly structured tuple with the list of names
-            self.logger.warning(f"Test1:{device_names}")
-            tuple_string = str((track_id, device_names))
-            return (tuple_string,)
+            tuple_string = (track_id, device_names)
+            return (tuple_string)
         self.osc_server.add_handler("/live/return_track/get/devices/name", return_track_devices_name)
 
         def return_track_devices_type(params):
@@ -122,7 +116,7 @@ class TrackHandler(AbletonOSCHandler):
             # Use integers instead of strings for device types
             device_types = [int(x.type) for x in device_list if hasattr(x, "type")]
             # Return a properly structured tuple without nesting
-            return (f"({track_id}, {device_types})",)
+            return (track_id, device_types)
         self.osc_server.add_handler("/live/return_track/get/devices/type", return_track_devices_type)
 
         def return_track_devices_class_name(params):
@@ -130,7 +124,7 @@ class TrackHandler(AbletonOSCHandler):
             device_list = get_all_devices(self.song.return_tracks[track_id])
             class_names = [x.class_name for x in device_list if hasattr(x, "class_name")]
             # Return a properly structured tuple without nesting
-            return (f"({track_id}, {class_names})",)
+            return (track_id, class_names,)
         self.osc_server.add_handler("/live/return_track/get/devices/class_name", return_track_devices_class_name)
 
         def return_track_numdevices(params):
@@ -138,38 +132,37 @@ class TrackHandler(AbletonOSCHandler):
             device_list = get_all_devices(self.song.return_tracks[track_id])
             count = len(device_list)
             # Return a properly structured tuple without nesting
-            return (f"({track_id}, {count})",)
+            return (track_id, count, )
         self.osc_server.add_handler("/live/return_track/get/num_devices", return_track_numdevices)
 
         def master_track_devices_num_devices(params):
             device_list = get_all_devices(self.song.master_track)
             self.logger.info(device_list)
-            return (f"({len(device_list)})",)
+            return (len(device_list),)
         self.osc_server.add_handler("/live/master_track/get/num_devices", master_track_devices_num_devices)
 
         def master_track_devices_name_devices(params):
             device_list = get_all_devices(self.song.master_track)
             names = tuple(f'{x.name}' for x in device_list)
-            return (str(names),)
+            return (names)
         self.osc_server.add_handler("/live/master_track/get/devices/name", master_track_devices_name_devices)
 
         def master_track_devices_type_devices(params):
             device_list = get_all_devices(self.song.master_track)
             types = tuple(int(x.type) for x in device_list if hasattr(x, 'type'))
-            return (str(types),)
+            return (types)
         self.osc_server.add_handler("/live/master_track/get/devices/type", master_track_devices_type_devices)
 
         def master_track_devices_class_name_devices(params):
             device_list = get_all_devices(self.song.master_track)
             class_names = tuple(f'{x.class_name}' for x in device_list if hasattr(x, "class_name"))
-            return (str(class_names),)
+            return (class_names)
         self.osc_server.add_handler("/live/master_track/get/devices/class_name",
                                     master_track_devices_class_name_devices)
 
         def get_num_devices_racks_included(track, _):
             full_data = get_all_devices(track)
             return tuple([len(full_data)])
-
         self.osc_server.add_handler("/live/track/get/num_devices",
                                     create_track_callback(get_num_devices_racks_included))
 
@@ -280,19 +273,24 @@ class TrackHandler(AbletonOSCHandler):
             return full_data
 
         def track_get_num_devices(track, _):
-            return len(track.devices),
+            devices = get_all_devices(track)
+            return len(devices),
 
         def track_get_device_names(track, _):
-            return tuple(device.name for device in track.devices)
+            devices = get_all_devices(track)
+            return tuple(device.name for device in devices)
 
         def track_get_device_types(track, _):
-            return tuple(device.type for device in track.devices)
+            devices = get_all_devices(track)
+            return tuple(device.type for device in devices)
 
         def track_get_device_class_names(track, _):
-            return tuple(device.class_name for device in track.devices)
+            devices = get_all_devices(track)
+            return tuple(device.class_name for device in devices)
 
         def track_get_device_can_have_chains(track, _):
-            return tuple(device.can_have_chains for device in track.devices)
+            devices = get_all_devices(track)
+            return tuple(device.can_have_chains for device in devices)
 
         def track_get_device_is_foldable(track, _):
             full_data = get_all_devices(track)
@@ -381,7 +379,7 @@ class TrackHandler(AbletonOSCHandler):
             all_tracks.extend(x for x in self.song.return_tracks)
             all_tracks.extend([self.song.master_track])
             selected_track_id = [i for i,x in enumerate(all_tracks) if(x == self.song.view.selected_track)][0]
-            return (str((selected_track_id, selected_device_id)),)
+            return (selected_track_id, selected_device_id)
         self.osc_server.add_handler("/live/device/get/selected", get_selected_device)
 
         def device_get_name(track, _):

@@ -551,3 +551,1065 @@ ConnectionResetError: [WinError 10054] An existing connection was forcibly close
 (2025-04-08 21:11:43,737) [INFO] Reloaded code
 (2025-04-08 21:12:44,297) [INFO] Reloading abletonosc...
 (2025-04-08 21:12:44,299) [INFO] Reloaded code
+(2025-04-08 21:16:24,430) [INFO] Disconnecting...
+(2025-04-11 21:11:10,116) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2025-04-11 21:11:13,251) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-11 21:11:13,335) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-11 21:12:52,896) [INFO] Reloading abletonosc...
+(2025-04-11 21:12:52,898) [INFO] Reloaded code
+(2025-04-12 03:54:16,439) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2025-04-12 03:54:19,664) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-12 03:54:19,785) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-12 03:56:27,084) [INFO] Reloading abletonosc...
+(2025-04-12 03:56:27,085) [INFO] Reloaded code
+(2025-04-12 04:01:37,361) [INFO] Reloading abletonosc...
+(2025-04-12 04:01:37,362) [INFO] Reloaded code
+(2025-04-12 04:03:54,241) [INFO] Reloading abletonosc...
+(2025-04-12 04:03:54,242) [INFO] Reloaded code
+(2025-04-12 04:03:54,243) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-12 04:03:54,352) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-12 04:04:03,108) [INFO] Reloading abletonosc...
+(2025-04-12 04:04:03,109) [INFO] Reloaded code
+(2025-04-12 04:04:03,109) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-12 04:04:03,219) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-12 04:16:19,946) [INFO] Reloading abletonosc...
+(2025-04-12 04:16:19,947) [INFO] Reloaded code
+(2025-04-12 04:16:19,948) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-12 04:16:20,042) [WARNING] AbletonOSC: Non-fatal socket error: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 158, in process
+    data, remote_addr = self._socket.recvfrom(65536)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+(2025-04-12 04:18:04,791) [INFO] Reloading abletonosc...
+(2025-04-12 04:18:04,792) [INFO] Reloaded code
+(2025-04-12 04:19:56,667) [INFO] Reloading abletonosc...
+(2025-04-12 04:19:56,669) [INFO] Reloaded code
+(2025-04-12 04:22:29,587) [INFO] Reloading abletonosc...
+(2025-04-12 04:22:29,588) [INFO] Reloaded code
+(2025-04-12 04:22:30,382) [ERROR] AbletonOSC: Unknown OSC address: /live/song/get/return_track_names
+(2025-04-12 04:22:33,182) [ERROR] AbletonOSC: Unknown OSC address: /live/song/get/return_track_names
+(2025-04-12 04:22:34,548) [ERROR] AbletonOSC: Unknown OSC address: /live/song/get/return_track_names
+(2025-04-12 04:22:35,465) [ERROR] AbletonOSC: Unknown OSC address: /live/song/get/return_track_names
+(2025-04-12 04:24:00,578) [INFO] Reloading abletonosc...
+(2025-04-12 04:24:00,579) [INFO] Reloaded code
+(2025-04-12 04:24:01,305) [ERROR] AbletonOSC: Error handling OSC message: can only concatenate tuple (not "Vector") to tuple
+(2025-04-12 04:24:01,315) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 15, in get_selected_track
+    return (list(self.song.tracks + [self.song.master_track] + self.song.return_tracks).index(self.song.view.selected_track),)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate tuple (not "Vector") to tuple
+
+(2025-04-12 04:24:08,995) [INFO] Reloading abletonosc...
+(2025-04-12 04:24:08,997) [INFO] Reloaded code
+(2025-04-12 04:24:13,955) [ERROR] AbletonOSC: Error handling OSC message: can only concatenate tuple (not "list") to tuple
+(2025-04-12 04:24:13,956) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 15, in get_selected_track
+    return (list(self.song.tracks + [self.song.master_track] + [self.song.return_tracks]).index(self.song.view.selected_track),)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate tuple (not "list") to tuple
+
+(2025-04-12 04:25:13,307) [INFO] Reloading abletonosc...
+(2025-04-12 04:25:13,309) [INFO] Reloaded code
+(2025-04-12 04:25:15,433) [ERROR] AbletonOSC: Error handling OSC message: 'Track' object has no attribute '__iter__'
+(2025-04-12 04:25:15,435) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 15, in get_selected_track
+    return (list(self.song.tracks + self.song.master_track + self.song.return_tracks).index(self.song.view.selected_track),)
+                 ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+AttributeError: 'Track' object has no attribute '__iter__'
+
+(2025-04-12 04:25:27,990) [INFO] Reloading abletonosc...
+(2025-04-12 04:25:27,991) [INFO] Reloaded code
+(2025-04-12 04:25:28,833) [ERROR] AbletonOSC: Error handling OSC message: can only concatenate tuple (not "Vector") to tuple
+(2025-04-12 04:25:28,833) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 15, in get_selected_track
+    return (list(self.song.tracks + [self.song.master_track] + self.song.return_tracks).index(self.song.view.selected_track),)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate tuple (not "Vector") to tuple
+
+(2025-04-12 04:25:51,323) [INFO] Reloading abletonosc...
+(2025-04-12 04:25:51,324) [INFO] Reloaded code
+(2025-04-12 04:25:53,334) [ERROR] AbletonOSC: Error handling OSC message: 'Track' object is not iterable
+(2025-04-12 04:25:53,334) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 15, in get_selected_track
+    return (list(self.song.tracks + tuple(self.song.master_track) + self.song.return_tracks).index(self.song.view.selected_track),)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Track' object is not iterable
+
+(2025-04-12 04:26:02,656) [INFO] Reloading abletonosc...
+(2025-04-12 04:26:02,657) [INFO] Reloaded code
+(2025-04-12 04:26:03,698) [ERROR] AbletonOSC: Error handling OSC message: can only concatenate tuple (not "Vector") to tuple
+(2025-04-12 04:26:03,700) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 15, in get_selected_track
+    return (list(self.song.tracks + tuple([self.song.master_track]) + self.song.return_tracks).index(self.song.view.selected_track),)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate tuple (not "Vector") to tuple
+
+(2025-04-12 04:27:07,152) [INFO] Reloading abletonosc...
+(2025-04-12 04:27:07,153) [INFO] Reloaded code
+(2025-04-12 04:29:45,099) [INFO] Reloading abletonosc...
+(2025-04-12 04:29:45,101) [INFO] Reloaded code
+(2025-04-12 04:31:03,876) [INFO] Reloading abletonosc...
+(2025-04-12 04:31:03,878) [INFO] Reloaded code
+(2025-04-12 04:31:10,769) [WARNING] <Track.Track object at 0x000000000E7869C0>...<Base.Vector object at 0x000000000E7869C0>
+(2025-04-12 04:31:34,960) [INFO] Reloading abletonosc...
+(2025-04-12 04:31:34,961) [INFO] Reloaded code
+(2025-04-12 04:31:36,002) [WARNING] <Track.Track object at 0x00000000226C5540>...[<Track.Track object at 0x000000000E7C8BC0>, <Track.Track object at 0x000000000E7CA3C0>]
+(2025-04-12 04:32:30,928) [INFO] Reloading abletonosc...
+(2025-04-12 04:32:30,930) [INFO] Reloaded code
+(2025-04-12 04:32:31,554) [WARNING] <Track.Track object at 0x000000000E7CB4C0>...[<Track.Track object at 0x000000000E7C8BC0>, <Track.Track object at 0x00000000162C4EC0>]
+(2025-04-12 04:32:31,554) [ERROR] AbletonOSC: Error handling OSC message: can only concatenate list (not "Track") to list
+(2025-04-12 04:32:31,555) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 16, in get_selected_track
+    return ([list(self.song.tracks) + self.song.master_track].extend(list(self.song.return_tracks)).index(self.song.view.selected_track),)
+             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate list (not "Track") to list
+
+(2025-04-12 04:32:46,360) [INFO] Reloading abletonosc...
+(2025-04-12 04:32:46,362) [INFO] Reloaded code
+(2025-04-12 04:32:50,721) [WARNING] <Track.Track object at 0x000000000E7866C0>...[<Track.Track object at 0x00000000162C5B40>, <Track.Track object at 0x00000000162C7340>]
+(2025-04-12 04:32:50,721) [ERROR] AbletonOSC: Error handling OSC message: can only concatenate list (not "Track") to list
+(2025-04-12 04:32:50,722) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 16, in get_selected_track
+    return ([list(self.song.tracks) + self.song.master_track + list(self.song.return_tracks)].index(self.song.view.selected_track),)
+             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate list (not "Track") to list
+
+(2025-04-12 04:33:04,402) [INFO] Reloading abletonosc...
+(2025-04-12 04:33:04,404) [INFO] Reloaded code
+(2025-04-12 04:33:05,796) [WARNING] <Track.Track object at 0x00000000162C5CC0>...[<Track.Track object at 0x0000000016304340>, <Track.Track object at 0x0000000016305B40>]
+(2025-04-12 04:33:05,796) [ERROR] AbletonOSC: Error handling OSC message: <Track.Track object at 0x00000000163059C0> is not in list
+(2025-04-12 04:33:05,796) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 16, in get_selected_track
+    return ([list(self.song.tracks) + [self.song.master_track] + list(self.song.return_tracks)].index(self.song.view.selected_track),)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: <Track.Track object at 0x00000000163059C0> is not in list
+
+(2025-04-12 04:33:22,013) [WARNING] <Track.Track object at 0x00000000162C5CC0>...[<Track.Track object at 0x00000000163059C0>, <Track.Track object at 0x0000000016305AC0>]
+(2025-04-12 04:33:22,013) [ERROR] AbletonOSC: Error handling OSC message: <Track.Track object at 0x0000000016305940> is not in list
+(2025-04-12 04:33:22,014) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 16, in get_selected_track
+    return ([list(self.song.tracks) + [self.song.master_track] + list(self.song.return_tracks)].index(self.song.view.selected_track),)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: <Track.Track object at 0x0000000016305940> is not in list
+
+(2025-04-12 04:33:26,795) [WARNING] <Track.Track object at 0x00000000226C54C0>...[<Track.Track object at 0x0000000016305940>, <Track.Track object at 0x0000000016305B40>]
+(2025-04-12 04:33:26,796) [ERROR] AbletonOSC: Error handling OSC message: <Track.Track object at 0x00000000163052C0> is not in list
+(2025-04-12 04:33:26,796) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 16, in get_selected_track
+    return ([list(self.song.tracks) + [self.song.master_track] + list(self.song.return_tracks)].index(self.song.view.selected_track),)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: <Track.Track object at 0x00000000163052C0> is not in list
+
+(2025-04-12 04:33:43,770) [INFO] Reloading abletonosc...
+(2025-04-12 04:33:43,771) [INFO] Reloaded code
+(2025-04-12 04:33:44,579) [WARNING] [[<Track.Track object at 0x0000000016306AC0>, <Track.Track object at 0x0000000016306FC0>, <Track.Track object at 0x0000000016306CC0>, <Track.Track object at 0x000000001634C6C0>, <Track.Track object at 0x00000000226C54C0>, <Track.Track object at 0x000000001634C4C0>, <Track.Track object at 0x000000001634C440>]]
+(2025-04-12 04:33:44,580) [ERROR] AbletonOSC: Error handling OSC message: <Track.Track object at 0x000000001634C4C0> is not in list
+(2025-04-12 04:33:44,580) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\view.py", line 16, in get_selected_track
+    return ([list(self.song.tracks) + [self.song.master_track] + list(self.song.return_tracks)].index(self.song.view.selected_track),)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: <Track.Track object at 0x000000001634C4C0> is not in list
+
+(2025-04-12 04:34:24,755) [INFO] Reloading abletonosc...
+(2025-04-12 04:34:24,781) [INFO] Reloaded code
+(2025-04-12 04:34:29,631) [WARNING] [[<Track.Track object at 0x00000000226C7540>, <Track.Track object at 0x00000000226C74C0>, <Track.Track object at 0x00000000226C7A40>, <Track.Track object at 0x00000000226C6F40>, <Track.Track object at 0x00000000226C7840>, <Track.Track object at 0x00000000226C7B40>, <Track.Track object at 0x00000000226C7AC0>]]
+(2025-04-12 04:34:34,814) [WARNING] [[<Track.Track object at 0x00000000226C7740>, <Track.Track object at 0x00000000226C7840>, <Track.Track object at 0x00000000226C7540>, <Track.Track object at 0x00000000226C7640>, <Track.Track object at 0x00000000226C6F40>, <Track.Track object at 0x00000000226C74C0>, <Track.Track object at 0x00000000226C77C0>]]
+(2025-04-12 04:34:37,015) [WARNING] [[<Track.Track object at 0x00000000226C7640>, <Track.Track object at 0x00000000226C7B40>, <Track.Track object at 0x00000000226C6F40>, <Track.Track object at 0x00000000226C7740>, <Track.Track object at 0x00000000226C5D40>, <Track.Track object at 0x00000000226C7CC0>, <Track.Track object at 0x00000000226C7840>]]
+(2025-04-12 04:34:39,197) [WARNING] [[<Track.Track object at 0x00000000226C7540>, <Track.Track object at 0x00000000226C74C0>, <Track.Track object at 0x00000000226C5D40>, <Track.Track object at 0x00000000226C7CC0>, <Track.Track object at 0x00000000226C7A40>, <Track.Track object at 0x00000000226C77C0>, <Track.Track object at 0x00000000226C7AC0>]]
+(2025-04-12 04:34:44,148) [WARNING] [[<Track.Track object at 0x00000000226C6F40>, <Track.Track object at 0x00000000226C7A40>, <Track.Track object at 0x00000000226C77C0>, <Track.Track object at 0x00000000226C7540>, <Track.Track object at 0x00000000226C7AC0>, <Track.Track object at 0x00000000226C7640>, <Track.Track object at 0x00000000226C74C0>]]
+(2025-04-12 04:34:46,398) [WARNING] [[<Track.Track object at 0x00000000226C5D40>, <Track.Track object at 0x00000000226C7AC0>, <Track.Track object at 0x00000000226C7640>, <Track.Track object at 0x00000000226C6F40>, <Track.Track object at 0x00000000226C74C0>, <Track.Track object at 0x00000000226C7740>, <Track.Track object at 0x00000000226C7A40>]]
+(2025-04-12 04:34:48,882) [WARNING] [[<Track.Track object at 0x00000000226C77C0>, <Track.Track object at 0x00000000226C74C0>, <Track.Track object at 0x00000000226C7740>, <Track.Track object at 0x00000000226C5D40>, <Track.Track object at 0x00000000226C7A40>, <Track.Track object at 0x00000000226C7CC0>, <Track.Track object at 0x00000000226C7AC0>]]
+(2025-04-12 04:34:50,914) [WARNING] [[<Track.Track object at 0x00000000226C7640>, <Track.Track object at 0x00000000226C7A40>, <Track.Track object at 0x00000000226C7CC0>, <Track.Track object at 0x00000000226C77C0>, <Track.Track object at 0x00000000226C7AC0>, <Track.Track object at 0x00000000226C7540>, <Track.Track object at 0x00000000226C74C0>]]
+(2025-04-12 04:35:37,865) [INFO] Reloading abletonosc...
+(2025-04-12 04:35:37,867) [INFO] Reloaded code
+(2025-04-12 04:35:47,727) [WARNING] [[<Track.Track object at 0x00000000226C77C0>, <Track.Track object at 0x000000001634FBC0>, <Track.Track object at 0x000000001634FB40>, <Track.Track object at 0x000000001634FAC0>, <Track.Track object at 0x00000000226C50C0>, <Track.Track object at 0x000000001634F9C0>, <Track.Track object at 0x000000001634F940>]]
+(2025-04-12 04:35:50,976) [WARNING] [[<Track.Track object at 0x00000000226C7740>, <Track.Track object at 0x000000001634FA40>, <Track.Track object at 0x000000001634FBC0>, <Track.Track object at 0x000000001634FB40>, <Track.Track object at 0x00000000226C55C0>, <Track.Track object at 0x000000001634F9C0>, <Track.Track object at 0x000000001634F940>]]
+(2025-04-12 04:44:30,895) [INFO] Reloading abletonosc...
+(2025-04-12 04:44:30,897) [INFO] Reloaded code
+(2025-04-12 04:44:31,638) [WARNING] (6,)
+(2025-04-12 04:51:41,657) [INFO] Reloading abletonosc...
+(2025-04-12 04:51:41,658) [INFO] Reloaded code
+(2025-04-12 04:53:51,689) [INFO] Reloading abletonosc...
+(2025-04-12 04:53:51,691) [INFO] Reloaded code
+(2025-04-12 05:00:22,765) [WARNING] First1:[]
+(2025-04-12 05:00:22,765) [WARNING] First2:[]
+(2025-04-12 05:00:22,765) [WARNING] Test1:['Reverb']
+(2025-04-12 05:03:30,418) [INFO] Reloading abletonosc...
+(2025-04-12 05:03:30,419) [INFO] Reloaded code
+(2025-04-12 05:03:30,923) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:03:30,924) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 94, in return_track_color_index
+    track_id = params[0]
+               ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:03:33,222) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:03:33,224) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:03:34,590) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:03:34,591) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:03:35,624) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2025-04-12 05:03:35,624) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 95, in return_track_color_index
+    color_index = self.song.return_tracks[track_id].color_index
+                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+IndexError: Index out of range
+
+(2025-04-12 05:03:36,390) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2025-04-12 05:03:36,391) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 95, in return_track_color_index
+    color_index = self.song.return_tracks[track_id].color_index
+                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+IndexError: Index out of range
+
+(2025-04-12 05:03:37,656) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2025-04-12 05:03:37,657) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 95, in return_track_color_index
+    color_index = self.song.return_tracks[track_id].color_index
+                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+IndexError: Index out of range
+
+(2025-04-12 05:03:38,406) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2025-04-12 05:03:38,407) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 95, in return_track_color_index
+    color_index = self.song.return_tracks[track_id].color_index
+                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+IndexError: Index out of range
+
+(2025-04-12 05:03:39,439) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2025-04-12 05:03:39,440) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 95, in return_track_color_index
+    color_index = self.song.return_tracks[track_id].color_index
+                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+IndexError: Index out of range
+
+(2025-04-12 05:04:00,184) [INFO] Reloading abletonosc...
+(2025-04-12 05:04:00,185) [INFO] Reloaded code
+(2025-04-12 05:04:01,123) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:04:01,124) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 94, in return_track_color_index
+    track_id = params[0]
+               ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:04:28,302) [INFO] Reloading abletonosc...
+(2025-04-12 05:04:28,333) [INFO] Reloaded code
+(2025-04-12 05:04:29,439) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:04:29,440) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 94, in return_track_color_index
+    track_id = params[0]
+               ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:04:40,202) [INFO] Reloading abletonosc...
+(2025-04-12 05:04:40,204) [INFO] Reloaded code
+(2025-04-12 05:04:41,973) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:04:41,974) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:04:49,051) [INFO] Reloading abletonosc...
+(2025-04-12 05:04:49,052) [INFO] Reloaded code
+(2025-04-12 05:05:16,987) [INFO] Reloading abletonosc...
+(2025-04-12 05:05:16,989) [INFO] Reloaded code
+(2025-04-12 05:05:18,244) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:05:18,245) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:05:25,187) [INFO] Reloading abletonosc...
+(2025-04-12 05:05:25,189) [INFO] Reloaded code
+(2025-04-12 05:05:26,111) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:05:26,112) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 115, in return_track_devices_type
+    track_id = params[0]
+               ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:06:20,924) [INFO] Reloading abletonosc...
+(2025-04-12 05:06:20,925) [INFO] Reloaded code
+(2025-04-12 05:06:36,440) [INFO] Reloading abletonosc...
+(2025-04-12 05:06:36,442) [INFO] Reloaded code
+(2025-04-12 05:06:48,474) [INFO] Reloading abletonosc...
+(2025-04-12 05:06:48,475) [INFO] Reloaded code
+(2025-04-12 05:06:51,064) [INFO] []
+(2025-04-12 05:07:17,216) [INFO] Disconnecting...
+(2025-04-12 05:07:18,127) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2025-04-12 05:07:22,324) [INFO] Reloading abletonosc...
+(2025-04-12 05:07:22,325) [INFO] Reloaded code
+(2025-04-12 05:07:23,029) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:07:23,030) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:07:26,955) [INFO] Reloading abletonosc...
+(2025-04-12 05:07:26,957) [INFO] Reloaded code
+(2025-04-12 05:07:37,972) [INFO] Reloading abletonosc...
+(2025-04-12 05:07:37,972) [INFO] Reloaded code
+(2025-04-12 05:07:46,772) [INFO] Reloading abletonosc...
+(2025-04-12 05:07:46,774) [INFO] Reloaded code
+(2025-04-12 05:07:52,400) [INFO] Reloading abletonosc...
+(2025-04-12 05:07:52,400) [INFO] Reloaded code
+(2025-04-12 05:07:53,611) [INFO] Logs:[(<Track.Track object at 0x000000001D9CD0C0>, <Track.Track object at 0x000000001D9CCE40>, <Track.Track object at 0x000000001D9CCCC0>, <Track.Track object at 0x000000001D9CCB40>, <Track.Track object at 0x000000001D9BE2C0>, <Track.Track object at 0x000000001D9BE140>, <Track.Track object at 0x000000001D9BDA40>, <Track.Track object at 0x000000001D9BD9C0>, <Track.Track object at 0x000000001D9CCEC0>)]
+(2025-04-12 05:08:01,289) [INFO] Reloading abletonosc...
+(2025-04-12 05:08:01,291) [INFO] Reloaded code
+(2025-04-12 05:08:02,212) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:08:02,212) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 15, in track_callback
+    if params[0] == "*":
+       ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:08:04,012) [INFO] Logs:[(<Track.Track object at 0x000000001D8453C0>, <Track.Track object at 0x000000004B33AF40>, <Track.Track object at 0x000000004B33AEC0>, <Track.Track object at 0x000000004B33ADC0>, <Track.Track object at 0x000000004B33AD40>, <Track.Track object at 0x000000004B33ACC0>, <Track.Track object at 0x000000004B33ABC0>, <Track.Track object at 0x000000004B33AB40>, <Track.Track object at 0x000000001D8455C0>)]
+(2025-04-12 05:10:27,276) [INFO] Reloading abletonosc...
+(2025-04-12 05:10:27,277) [INFO] Reloaded code
+(2025-04-12 05:11:20,948) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:11:20,949) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:11:24,651) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:11:24,653) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:12:17,057) [INFO] Reloading abletonosc...
+(2025-04-12 05:12:17,059) [INFO] Reloaded code
+(2025-04-12 05:12:17,660) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:12:17,661) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 99, in return_track_devices_name
+    track_id = params[0]
+               ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:15:33,494) [INFO] Reloading abletonosc...
+(2025-04-12 05:15:33,496) [INFO] Reloaded code
+(2025-04-12 05:15:34,103) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:15:34,103) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:15:35,786) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:15:35,786) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:15:38,410) [INFO] Reloading abletonosc...
+(2025-04-12 05:15:38,411) [INFO] Reloaded code
+(2025-04-12 05:15:39,687) [ERROR] AbletonOSC: Error handling OSC message: not enough values to unpack (expected 2, got 1)
+(2025-04-12 05:15:39,687) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\song.py", line 108, in song_get_return_track_names
+    track_index_min, track_index_max = params
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+(2025-04-12 05:16:20,497) [INFO] Reloading abletonosc...
+(2025-04-12 05:16:20,527) [INFO] Reloaded code
+(2025-04-12 05:17:26,914) [INFO] Reloading abletonosc...
+(2025-04-12 05:17:26,916) [INFO] Reloaded code
+(2025-04-12 05:17:50,638) [INFO] [<Device.Device object at 0x000000001D9007C0>, <Device.Device object at 0x000000001D902640>, <Device.Device object at 0x000000001D9016C0>]
+(2025-04-12 05:17:59,989) [INFO] Getting property for device: name = Reverb
+(2025-04-12 05:20:14,843) [INFO] Reloading abletonosc...
+(2025-04-12 05:20:14,844) [INFO] Reloaded code
+(2025-04-12 05:20:15,685) [INFO] Getting property for device: name = Reverb
+(2025-04-12 05:20:15,685) [ERROR] AbletonOSC: Error handling OSC message: Infered arg_value type is not supported
+(2025-04-12 05:20:15,686) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 96, in process_message
+    self.send(address=message.address,
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 77, in send
+    msg_builder.add_arg(param)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 87, in add_arg
+    arg_type = self._get_arg_type(arg_value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\pythonosc\osc_message_builder.py", line 128, in _get_arg_type
+    raise ValueError('Infered arg_value type is not supported')
+ValueError: Infered arg_value type is not supported
+
+(2025-04-12 05:20:19,476) [INFO] Reloading abletonosc...
+(2025-04-12 05:20:19,478) [INFO] Reloaded code
+(2025-04-12 05:20:20,218) [INFO] Getting property for device: name = Reverb
+(2025-04-12 05:20:35,787) [INFO] Getting property for device: class_name = Reverb
+(2025-04-12 05:20:39,521) [INFO] Getting property for device: type = 2
+(2025-04-12 05:21:45,737) [INFO] Reloading abletonosc...
+(2025-04-12 05:21:45,738) [INFO] Reloaded code
+(2025-04-12 05:21:57,421) [INFO] Reloading abletonosc...
+(2025-04-12 05:21:57,422) [INFO] Reloaded code
+(2025-04-12 05:22:16,294) [ERROR] AbletonOSC: Error handling OSC message: 'Device' object has no attribute 'chains'
+(2025-04-12 05:22:16,295) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 314, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                            ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Device' object has no attribute 'chains'
+
+(2025-04-12 05:23:06,164) [ERROR] AbletonOSC: Error handling OSC message: 'Device' object has no attribute 'chains'
+(2025-04-12 05:23:06,165) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 314, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                            ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Device' object has no attribute 'chains'
+
+(2025-04-12 05:23:24,732) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:23:24,732) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 340, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+(2025-04-12 05:27:39,483) [INFO] Reloading abletonosc...
+(2025-04-12 05:27:39,484) [INFO] Reloaded code
+(2025-04-12 05:28:06,036) [INFO] Reloading abletonosc...
+(2025-04-12 05:28:06,037) [INFO] Reloaded code
+(2025-04-12 05:28:14,350) [INFO] Reloading abletonosc...
+(2025-04-12 05:28:14,351) [INFO] Reloaded code
+(2025-04-12 05:28:57,053) [INFO] Reloading abletonosc...
+(2025-04-12 05:28:57,055) [INFO] Reloaded code
+(2025-04-12 05:29:25,620) [INFO] Reloading abletonosc...
+(2025-04-12 05:29:25,621) [INFO] Reloaded code
+(2025-04-12 05:29:39,753) [INFO] Reloading abletonosc...
+(2025-04-12 05:29:39,756) [INFO] Reloaded code
+(2025-04-12 05:30:54,162) [INFO] Reloading abletonosc...
+(2025-04-12 05:30:54,163) [INFO] Reloaded code
+(2025-04-12 05:31:36,988) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:31:36,989) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 15, in track_callback
+    if params[0] == "*":
+       ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:31:43,534) [INFO] Reloading abletonosc...
+(2025-04-12 05:31:43,562) [INFO] Reloaded code
+(2025-04-12 05:33:38,113) [INFO] Reloading abletonosc...
+(2025-04-12 05:33:38,114) [INFO] Reloaded code
+(2025-04-12 05:33:39,235) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:33:39,236) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 345, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:33:40,951) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:33:40,953) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 345, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:33:45,318) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:33:45,319) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 345, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+(2025-04-12 05:33:47,403) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:33:47,403) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 345, in track_get_device_name_of_chain
+    return tuple([_[0],[x.name for x in full_data if str(type(x)) == "<class 'RackDevice.RackDevice'>"][_[0]]])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:35:48,466) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:35:48,466) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 15, in track_callback
+    if params[0] == "*":
+       ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:35:49,750) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:35:49,750) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 297, in track_get_device_is_foldable
+    return tuple([_[0], full_data[_[0]].can_have_chains])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:35:51,033) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:35:51,034) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 297, in track_get_device_is_foldable
+    return tuple([_[0], full_data[_[0]].can_have_chains])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:36:03,733) [ERROR] AbletonOSC: Error handling OSC message: 'Device' object has no attribute 'chains'
+(2025-04-12 05:36:03,734) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 319, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                            ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Device' object has no attribute 'chains'
+
+(2025-04-12 05:36:05,433) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:36:05,433) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 319, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:36:06,999) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:36:07,001) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 319, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:36:22,217) [ERROR] AbletonOSC: Error handling OSC message: 'Device' object has no attribute 'chains'
+(2025-04-12 05:36:22,217) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 319, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                            ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Device' object has no attribute 'chains'
+
+(2025-04-12 05:36:23,850) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:36:23,850) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 319, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:36:24,883) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:36:24,883) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 319, in track_get_device_num_of_chains
+    return tuple([_[0], len(full_data[_[0]].chains)])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:36:53,299) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:36:53,299) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\device.py", line 55, in device_callback
+    track_index, device_index = int(params[0]), int(params[1])
+                                    ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:36:57,750) [ERROR] AbletonOSC: Error handling OSC message: list index out of range
+(2025-04-12 05:36:57,750) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\device.py", line 55, in device_callback
+    track_index, device_index = int(params[0]), int(params[1])
+                                                    ~~~~~~^^^
+IndexError: list index out of range
+
+(2025-04-12 05:37:07,716) [ERROR] AbletonOSC: Unknown OSC address: /live/device/get/names_of_chains/live/device/get/names_of_devices_in_chain
+(2025-04-12 05:37:08,516) [ERROR] AbletonOSC: Error handling OSC message: tuple index out of range
+(2025-04-12 05:37:08,517) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 25, in track_callback
+    rv = func(track, *args, tuple(params[1:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viktor\Desktop\temp\Ableton\Resources\MIDI Remote Scripts\AbletonOSC\abletonosc\track.py", line 340, in track_get_device_name_of_devicechains
+    return tuple([_[0], [x.name for x in full_data[_[0]:] if 'Device.Device' in (str(type(x))) and 'Chain' in str(type(x.canonical_parent))]])
+                  ~^^^
+IndexError: tuple index out of range
+
+(2025-04-12 05:37:17,772) [INFO] [<Device.Device object at 0x00000000007688C0>, <Device.Device object at 0x0000000000768C40>, <Device.Device object at 0x0000000000769F40>]

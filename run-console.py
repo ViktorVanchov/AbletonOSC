@@ -308,7 +308,7 @@ def main(args):
             params.append(part)
         try:
             rv = client.query(command, params)
-            rv = ", ".join(str(part) for part in rv)
+            #rv = ", ".join(str(part) for part in rv)
             print(rv)
         except RuntimeError:
             pass
