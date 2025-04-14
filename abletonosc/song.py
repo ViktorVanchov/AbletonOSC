@@ -89,7 +89,7 @@ class SongHandler(AbletonOSCHandler):
         #--------------------------------------------------------------------------------
         # Callbacks for Song: Track properties
         #--------------------------------------------------------------------------------
-        self.osc_server.add_handler("/live/song/get/num_tracks", lambda _: (len(self.song.tracks),))
+        self.osc_server.add_handler("/live/song/get/num_tracks", lambda _: (len(self.song.tracks + self.song.return_tracks + (self.song.master_track,)),))
 
         def song_get_track_names(params):
             if len(params) == 0:
