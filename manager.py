@@ -21,7 +21,7 @@ class Manager(ControlSurface):
             self.osc_server = abletonosc.OSCServer()
             self.schedule_message(0, self.tick)
 
-            self.start_logging()
+            #self.start_logging()
             self.init_api()
 
             self.show_message("AbletonOSC: Listening for OSC on port %d" % abletonosc.OSC_LISTEN_PORT)
